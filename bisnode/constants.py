@@ -1,0 +1,2 @@
+COMPANY_STANDARD_REPORT = "NRGCompanyReportStandard"
+COMPANY_RATING_REPORT = "NRGCompanyReportRating"
