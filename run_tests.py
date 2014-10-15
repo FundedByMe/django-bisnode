@@ -19,7 +19,7 @@ def main():
 
     options, args = parser.parse_args()
 
-    app_path = 'mangopay'
+    app_path = 'bisnode'
     parent_dir, app_name = os.path.split(app_path)
     sys.path.insert(0, parent_dir)
 
