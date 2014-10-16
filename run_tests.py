@@ -41,7 +41,7 @@ def main():
         ),
         "TEMPLATE_DIRS": (
             os.path.join(os.path.dirname(__file__),
-                         "paypaladaptive/templates"),
+                         "bisnode/templates"),
         ),
         "INSTALLED_APPS": (
             "django.contrib.auth",

@@ -1,8 +1,14 @@
+from datetime import datetime, date
+
 from django.db import models
 
 from .constants import COMPANY_RATING_REPORT, RATING_CHOICES
-
 from .bisnode import get_bisnode_company_report
+
+
+def bisnode_date_to_date(bisnode_date):
+    formatted_datetime = datetime.strptime(bisnode_date, "%Y%m%d")
+    return formatted_datetime.date()
 
 
 class BisnodeRatingReport(models.Model):
@@ -17,6 +23,7 @@ class BisnodeRatingReport(models.Model):
             report_type=COMPANY_RATING_REPORT,
             organization_number=self.organization_number)
         company_data = rating_report.generalCompanyData[0]
-        self.rating_code = company_data['ratingCode']
-        self.date_of_rating = company_data['dateOfRating']
+        self.rating = company_data['ratingCode']
+        self.date_of_rating = bisnode_date_to_date(
+            company_data['dateOfRating'])
         self.save()
