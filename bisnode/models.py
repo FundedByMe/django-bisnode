@@ -23,7 +23,7 @@ class BisnodeRatingReport(models.Model):
             report_type=COMPANY_RATING_REPORT,
             organization_number=self.organization_number)
         company_data = rating_report.generalCompanyData[0]
-        self.rating_code = company_data['ratingCode']
+        self.rating = company_data['ratingCode']
         self.date_of_rating = bisnode_date_to_date(
             company_data['dateOfRating'])
         self.save()
