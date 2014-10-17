@@ -20,3 +20,5 @@ class BisnodeRatingReportTests(TestCase):
         rating_report.get()
         rating_report = BisnodeRatingReport.objects.get(id=rating_report.id)
         self.assertEquals(rating_report.rating, GOOD)
+        self.assertIsNotNone(rating_report.date_of_rating)
+        self.assertIsNotNone(rating_report.registration_date)

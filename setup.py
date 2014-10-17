@@ -11,6 +11,7 @@ setup(
     url='http://github.com/FundedByMe/django-bisnode',
     install_requires=[
         'Django>=1.4.15',
+        'suds-jurko>=0.6',
     ],
     description='Django package that helps in your Bisnode integration',
     packages=find_packages(),
