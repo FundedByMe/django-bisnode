@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime
 
 from django.db import models
 
@@ -16,6 +16,7 @@ class BisnodeRatingReport(models.Model):
     rating = models.CharField(max_length=3, choices=RATING_CHOICES,
                               null=True, blank=True)
     date_of_rating = models.DateField(blank=True, null=True)
+    registration_date = models.DateField(blank=True, null=True)
     last_updated = models.DateTimeField(auto_now=True)
 
     def get(self):
@@ -26,4 +27,6 @@ class BisnodeRatingReport(models.Model):
         self.rating = company_data['ratingCode']
         self.date_of_rating = bisnode_date_to_date(
             company_data['dateOfRating'])
+        self.registration_date = bisnode_date_to_date(
+            company_data['dateReg'])
         self.save()

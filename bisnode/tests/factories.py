@@ -11,4 +11,5 @@ class BisnodeRatingReportFactory(factory.DjangoModelFactory):
     organization_number = "5561234567"
     rating = None
     date_of_rating = None
+    registration_date = None
     last_updated = now()
