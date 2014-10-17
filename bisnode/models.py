@@ -12,7 +12,7 @@ def bisnode_date_to_date(bisnode_date):
 
 
 class BisnodeRatingReport(models.Model):
-    organization_number = models.CharField(max_length=10)
+    organization_number = models.CharField(max_length=10, unique=True)
     rating = models.CharField(max_length=3, choices=RATING_CHOICES,
                               null=True, blank=True)
     date_of_rating = models.DateField(blank=True, null=True)
