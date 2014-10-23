@@ -1,3 +1,5 @@
+from django.utils.translation import ugettext_lazy as _
+
 COMPANY_STANDARD_REPORT = "NRGCompanyReportStandard"
 COMPANY_RATING_REPORT = "NRGCompanyReportRating"
 
@@ -10,13 +12,13 @@ BAD = 'C'
 MISSING = '-'
 
 RATING_CHOICES = (
-    (HIGH, "Highest credit worthiness"),
-    (GOOD, "Good credit worthiness"),
-    (WORTHY, "Credit worthy"),
-    (NEW, "New company"),
-    (BELOW_AVERAGE, "Credit with safety measurements"),
-    (BAD, "Credit advised against"),
-    (MISSING, "Rating not applicable"),
+    (HIGH, _("Highest credit worthiness")),
+    (GOOD, _("Good credit worthiness")),
+    (WORTHY, _("Credit worthy")),
+    (NEW, _("New company")),
+    (BELOW_AVERAGE, _("Credit with safety measurements")),
+    (BAD, _("Credit advised against")),
+    (MISSING, _("Rating not applicable")),
 )
 
 
@@ -26,10 +28,10 @@ SMALLER_SCALE = 'AGE030'
 LESS_THAN_TWO_YEARS = 'AGE040'
 
 OPERATION_CHOICES = (
-    (WELL_ESTABLISHED, 'Well-established'),
-    (ESTABLISHED, 'Established'),
-    (SMALLER_SCALE, '2–4 years'),
-    (LESS_THAN_TWO_YEARS, 'Less than two years'),
+    (WELL_ESTABLISHED, _('Well-established')),
+    (ESTABLISHED, _('Established')),
+    (SMALLER_SCALE, _('2-4 years')),
+    (LESS_THAN_TWO_YEARS, _('Less than two years')),
 )
 
 OPERATION_CHOICES_DICT = dict(OPERATION_CHOICES)
@@ -43,12 +45,12 @@ NEGATIVE_GROUP = 'OWN090'
 INCOMPLETE = 'OWN080'
 
 MANAGEMENT_CHOICES = (
-    (SATISFACTORY, 'Satisfactory'),
-    (NOTES_ON_RECORD, 'Notes on record'),
-    (NEGATIVE_ON_RECORD, 'Negative info on record'),
-    (NEGATIVE_GROUP, 'Negative info – group'),
-    (CURRENT_NEGATIVE, 'Current negative info'),
-    (INCOMPLETE, 'Incomplete')
+    (SATISFACTORY, _('Satisfactory')),
+    (NOTES_ON_RECORD, _('Notes on record')),
+    (NEGATIVE_ON_RECORD, _('Negative info on record')),
+    (NEGATIVE_GROUP, _('Negative info - group')),
+    (CURRENT_NEGATIVE, _('Current negative info')),
+    (INCOMPLETE, _('Incomplete'))
 )
 
 MANAGEMENT_CHOICES_DICT = dict(MANAGEMENT_CHOICES)
@@ -66,16 +68,16 @@ NOT_UPDATED3 = 'ECO100'
 UNAVAILABLE = 'ECO110'
 
 FINANCES_CHOICES = (
-    (VERY_GOOD_FINANCES, 'Very good'),
-    (GOOD_FINANCES, 'Good'),
-    (SATISFACTORY_FINANCES, 'Satisfactory'),
-    (UNSATISFACTORY_FINANCES, 'Unsatisfactory'),
-    (WEAK_FINANCES, 'Weak'),
-    (SEE_SPECIFICATIONS, 'See financial specifications'),
-    (NOT_UPDATED, 'Annual accounts not updated'),
-    (NOT_UPDATED2, 'Annual accounts not updated'),
-    (NOT_UPDATED3, 'Annual accounts not updated'),
-    (UNAVAILABLE, 'Annual accounts unavailable')
+    (VERY_GOOD_FINANCES, _('Very good')),
+    (GOOD_FINANCES, _('Good')),
+    (SATISFACTORY_FINANCES, _('Satisfactory')),
+    (UNSATISFACTORY_FINANCES, _('Unsatisfactory')),
+    (WEAK_FINANCES, _('Weak')),
+    (SEE_SPECIFICATIONS, _('See financial specifications')),
+    (NOT_UPDATED, _('Annual accounts not updated')),
+    (NOT_UPDATED2, _('Annual accounts not updated')),
+    (NOT_UPDATED3, _('Annual accounts not updated')),
+    (UNAVAILABLE, _('Annual accounts unavailable'))
 )
 
 FINANCES_CHOICES_DICT = dict(FINANCES_CHOICES)
@@ -92,15 +94,15 @@ WEAK_SOLVENCY = 'PAY080'
 VERY_WEAK_SOLVENCY = 'PAY090'
 
 SOLVENCY_CHOICES = (
-    (VERY_GOOD_SOLVENCY, 'Very good'),
-    (VERY_GOOD_NOTES_ON_RECORD, 'Very good – notes on record'),
-    (GOOD_SOLVENCY, 'Good'),
-    (GOOD_NOTES_ON_RECORD, 'Good – notes on record'),
-    (SATISFACTORY_SOLVENCY, 'Satisfactory'),
-    (SATISFACTORY_NOTES_ON_RECORD, 'Satisfactory – notes on record'),
-    (UNSATISFACTORY_SOLVENCY, 'Unsatisfactory'),
-    (WEAK_SOLVENCY, 'Weak'),
-    (VERY_WEAK_SOLVENCY, 'Very weak'),
+    (VERY_GOOD_SOLVENCY, _('Very good')),
+    (VERY_GOOD_NOTES_ON_RECORD, _('Very good - notes on record')),
+    (GOOD_SOLVENCY, _('Good')),
+    (GOOD_NOTES_ON_RECORD, _('Good - notes on record')),
+    (SATISFACTORY_SOLVENCY, _('Satisfactory')),
+    (SATISFACTORY_NOTES_ON_RECORD, _('Satisfactory - notes on record')),
+    (UNSATISFACTORY_SOLVENCY, _('Unsatisfactory')),
+    (WEAK_SOLVENCY, _('Weak')),
+    (VERY_WEAK_SOLVENCY, _('Very weak')),
 )
 
 SOLVENCY_CHOICES_DICT = dict(SOLVENCY_CHOICES)
