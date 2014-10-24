@@ -2,6 +2,8 @@ from datetime import datetime
 
 from django.db import models
 
+from money.contrib.django.models.fields import MoneyField
+
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
                         FINANCES_CHOICES, SOLVENCY_CHOICES)
@@ -42,6 +44,8 @@ class BisnodeRatingReport(BinodeReport):
 
 
 class BisnodeStandardReport(BinodeReport):
+
+    # General Company Data
     history_and_operation = models.CharField(
         max_length=6, choices=OPERATION_CHOICES, blank=True)
     management = models.CharField(
@@ -50,14 +54,19 @@ class BisnodeStandardReport(BinodeReport):
         max_length=6, choices=FINANCES_CHOICES, blank=True)
     solvency = models.CharField(
         max_length=6, choices=SOLVENCY_CHOICES, blank=True)
-
     number_of_employees = models.IntegerField(null=True, blank=True)
+    share_capital = MoneyField(
+        default=0, default_currency="SEK", decimal_places=2, max_digits=14)
 
     def get(self):
-        rating_report = get_bisnode_company_report(
+        standard_report = get_bisnode_company_report(
             report_type=COMPANY_STANDARD_REPORT,
             organization_number=self.organization_number)
-        company_data = rating_report.generalCompanyData[0]
+        company_data = standard_report.generalCompanyData[0]
+        self._update_general_company_data(company_data)
+        self.save()
+
+    def _update_general_company_data(self, company_data):
         self.rating = company_data['ratingCode']
         self.date_of_rating = bisnode_date_to_date(
             company_data['dateOfRating'])
@@ -68,4 +77,4 @@ class BisnodeStandardReport(BinodeReport):
         self.finances = company_data['financeCode']
         self.solvency = company_data['abilityToPay1']
         self.number_of_employees = company_data['noOfEmployees1']
-        self.save()
+        self.share_capital.amount = float(company_data['shareCapital'])
