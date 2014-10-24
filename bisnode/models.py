@@ -6,7 +6,8 @@ from money.contrib.django.models.fields import MoneyField
 
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
-                        FINANCES_CHOICES, SOLVENCY_CHOICES)
+                        FINANCES_CHOICES, SOLVENCY_CHOICES,
+                        BOARD_MEMBERS_FUNCTION_CHOICES)
 from .bisnode import get_bisnode_company_report
 
 
@@ -48,6 +49,7 @@ class BisnodeCompanyReport(models.Model):
             report_type=COMPANY_STANDARD_REPORT,
             organization_number=organization_number)
         self._update_general_company_data(standard_report)
+        self._update_borad_members(standard_report)
         self.save()
 
     def _update_general_company_data(self, report):
@@ -62,3 +64,31 @@ class BisnodeCompanyReport(models.Model):
         self.solvency = company_data.abilityToPay1
         self.number_of_employees = company_data.noOfEmployees1
         self.share_capital.amount = float(company_data.shareCapital)
+
+    def _update_borad_members(self, report):
+        self.board_members.all().delete()
+        board_members = report.boardMembers
+        for board_member in board_members:
+            new_board_member = BisnodeBoardMember()
+            new_board_member.create(self, board_member)
+
+
+class BisnodeBoardMember(models.Model):
+
+    company = models.ForeignKey(BisnodeCompanyReport,
+                                related_name="board_members")
+    name = models.CharField(max_length=60)
+    function = models.CharField(max_length=2, blank=True,
+                                choices=BOARD_MEMBERS_FUNCTION_CHOICES)
+    member_since = models.DateField(blank=True, null=True)
+
+    def create(self, company, board_member):
+        self.company = company
+        self.name = board_member['principalName']
+        self.function = board_member['principalFunction']
+        try:
+            self.date = bisnode_date_to_date(
+                board_member['dateOfPrincipalApp'])
+        except AttributeError:
+            pass
+        self.save()
