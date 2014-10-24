@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/FundedByMe/django-bisnode.svg?branch=travis)](https://travis-ci.org/FundedByMe/django-bisnode)
+[![Build Status](https://travis-ci.org/FundedByMe/django-bisnode.svg?branch=master)](https://travis-ci.org/FundedByMe/django-bisnode)
 
 django-bisnode
 ==============
