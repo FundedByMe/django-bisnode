@@ -1,27 +1,25 @@
+import os
 
-class MockBisnodeRatingReport(object):
-    generalCompanyData = [{'ratingCode': 'AA',
-                           'dateOfRating': '20140201',
-                           'dateReg': '19561101'}]
+from suds.client import Client
 
-    def __init__(self, rating=None):
-        self.generalCompanyData[0]['ratingCode'] = rating
+from ..constants import COMPANY_STANDARD_REPORT, COMPANY_RATING_REPORT
 
 
-class MockBisnodeStandardReport(object):
-    generalCompanyData = [{'ratingCode': 'AA',
-                           'dateOfRating': '20140201',
-                           'dateReg': '19561101',
-                           'historyCode': 'AGE010',
-                           'shareholdersCode': 'OWN030',
-                           'financeCode': 'ECO020',
-                           'abilityToPay1': 'PAY020',
-                           'noOfEmployees1': '11',
-                           'shareCapital': '00003000000'}]
+def get_bisnode_report_from_file(report_type, file_name):
+    url = "https://www.bisgateway.com/brg/services/%s?wsdl" % report_type
+    client = Client(url)
+    file_path = os.path.join(os.path.dirname(__file__), file_name)
+    with open(file_path, "r") as response_message_file:
+        response_message = response_message_file.read()
+    report = client.service.service(__inject={'reply': response_message})
+    return report
 
-    def __init__(self, rating=None, finances=None,
-                 number_of_employees=None, share_capital=None):
-        self.generalCompanyData[0]['ratingCode'] = rating
-        self.generalCompanyData[0]['financeCode'] = finances
-        self.generalCompanyData[0]['noOfEmployees1'] = str(number_of_employees)
-        self.generalCompanyData[0]['shareCapital'] = str(share_capital.amount)
+
+def get_bisnode_test_standard_report():
+    return get_bisnode_report_from_file(COMPANY_STANDARD_REPORT,
+                                        'data/standard_report.xml')
+
+
+def get_bisnode_test_rating_report():
+    return get_bisnode_report_from_file(COMPANY_RATING_REPORT,
+                                        'data/rating_report.xml')

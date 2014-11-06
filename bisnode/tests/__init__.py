@@ -1,2 +1,1 @@
-from rating_report import BisnodeRatingReportTests
-from standard_report import BisnodeStandardReportTests
+from .company_report import BisnodeCompanyReportTests

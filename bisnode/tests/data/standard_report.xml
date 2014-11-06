@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Header>
+      <empNo soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></empNo>
+      <customerReference soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></customerReference>
+      <projectNo soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></projectNo>
+      <letterOfNotice soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></letterOfNotice>
+      <clientNo soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></clientNo>
+      <deliveryAddress soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></deliveryAddress>
+      <customerCodeOwner soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg">WNR7</customerCodeOwner>
+      <costPlaceNo soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg"></costPlaceNo>
+      <userId soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg">BWYI</userId>
+      <customerCode soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg">WNR7</customerCode>
+      <timeTaken soapenv:mustUnderstand="0" xmlns="http://www.dnbnordic.com/brg/log">512</timeTaken>
+   </soapenv:Header>
+   <soapenv:Body>
+      <nRGCompanyReportStandardResponse xmlns="http://www.dnbnordic.com/brg/NRGCompanyReportStandard/response">
+         <boardMembers nrg:segment-code="NB32-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <principalFunction>00</principalFunction>
+            <principalId>01510101015</principalId>
+            <principalName>Skuldman, Per Testperson</principalName>
+            <dateOfPrincipalApp>19850209</dateOfPrincipalApp>
+            <principalFunctionDesc>Member managing dir.</principalFunctionDesc>
+            <boardMemberType>PP</boardMemberType>
+         </boardMembers>
+         <boardMembers nrg:segment-code="NB32-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <principalFunction>20</principalFunction>
+            <principalId>00808081038</principalId>
+            <principalName>Skuldman, Erik Tore Testperson</principalName>
+            <dateOfPrincipalApp>19561101</dateOfPrincipalApp>
+            <principalFunctionDesc>Member</principalFunctionDesc>
+            <boardMemberType>PP</boardMemberType>
+         </boardMembers>
+         <boardMembers nrg:segment-code="NB32-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <principalFunction>32</principalFunction>
+            <principalId>01010101010</principalId>
+            <principalName>Johansen, Lars</principalName>
+            <dateOfPrincipalApp>19930817</dateOfPrincipalApp>
+            <principalFunctionDesc>Deputy</principalFunctionDesc>
+            <boardMemberType>PP</boardMemberType>
+         </boardMembers>
+         <boardMembers nrg:segment-code="NB32-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <principalFunction>97</principalFunction>
+            <principalId>00000000000</principalId>
+            <principalName>Synman, Eric</principalName>
+            <codeForNonSpecDateOfApp>X</codeForNonSpecDateOfApp>
+            <principalFunctionDesc>Auditor</principalFunctionDesc>
+            <boardMemberType>PP</boardMemberType>
+         </boardMembers>
+         <branches nrg:segment-code="NB6Q-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <branchId>72144728</branchId>
+            <dunsNumber>00354394793</dunsNumber>
+            <headquarterBranch>H</headquarterBranch>
+            <postalAddress>Box 1529 /Test/</postalAddress>
+            <postCode>17229</postCode>
+            <town>Sundbyberg</town>
+            <telNbrInclAreaCode>020 654321</telNbrInclAreaCode>
+            <visitingAddress>Sturegatan 3</visitingAddress>
+            <postalCodeOfVisitingAddress>17231</postalCodeOfVisitingAddress>
+            <townOfVisitingAddress>Sundbyberg</townOfVisitingAddress>
+            <advertBlockCode>1</advertBlockCode>
+         </branches>
+         <chattelMortgages nrg:segment-code="NB3Y-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <chattelMortgagesDate>20070127</chattelMortgagesDate>
+            <chattelMortgagesAmount>00000005000</chattelMortgagesAmount>
+         </chattelMortgages>
+         <chattelMortgages nrg:segment-code="NB3Y-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <chattelMortgagesDate>20061127</chattelMortgagesDate>
+            <chattelMortgagesAmount>00000005000</chattelMortgagesAmount>
+         </chattelMortgages>
+         <chattelMortgages nrg:segment-code="NB3Y-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <chattelMortgagesDate>20051127</chattelMortgagesDate>
+            <chattelMortgagesAmount>00000005000</chattelMortgagesAmount>
+         </chattelMortgages>
+         <companyEventHistory nrg:segment-code="NB6X-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20131231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20121231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20111231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20101231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20091231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-5" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20070127</dateOfEvent>
+            <eventCategoryCode>11</eventCategoryCode>
+            <eventCategoryDesc>Inteckning</eventCategoryDesc>
+            <eventCode>FI</eventCode>
+            <eventDesc1>Chattel mortgage: 5000 SEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-6" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20061127</dateOfEvent>
+            <eventCategoryCode>11</eventCategoryCode>
+            <eventCategoryDesc>Inteckning</eventCategoryDesc>
+            <eventCode>FI</eventCode>
+            <eventDesc1>Chattel mortgage: 5000 SEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-7" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20051127</dateOfEvent>
+            <eventCategoryCode>11</eventCategoryCode>
+            <eventCategoryDesc>Inteckning</eventCategoryDesc>
+            <eventCode>FI</eventCode>
+            <eventDesc1>Chattel mortgage: 5000 SEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-8" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20041231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 10 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-9" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20031231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 4 000 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-10" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20021231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 2 500 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-11" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>20010214</dateOfEvent>
+            <eventCategoryCode>08</eventCategoryCode>
+            <eventCategoryDesc>Moms</eventCategoryDesc>
+            <eventCode>ARJ</eventCode>
+            <eventDesc1>Registered as employer</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-12" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19981231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 955 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-13" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19971231</dateOfEvent>
+            <eventCategoryCode>06</eventCategoryCode>
+            <eventCategoryDesc>Utdelning</eventCategoryDesc>
+            <eventCode>UTDE</eventCode>
+            <eventDesc1>Utdelning: 450 TSEK</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-14" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19950210</dateOfEvent>
+            <eventCategoryCode>08</eventCategoryCode>
+            <eventCategoryDesc>Moms</eventCategoryDesc>
+            <eventCode>MOJ</eventCode>
+            <eventDesc1>Actively reporting vat</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-15" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19950210</dateOfEvent>
+            <eventCategoryCode>08</eventCategoryCode>
+            <eventCategoryDesc>Moms</eventCategoryDesc>
+            <eventCode>MRJ</eventCode>
+            <eventDesc1>Registered for vat</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-16" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19930817</dateOfEvent>
+            <eventCategoryCode>01</eventCategoryCode>
+            <eventCategoryDesc>Bolag</eventCategoryDesc>
+            <eventCode>AKTFIRM</eventCode>
+            <eventDesc1>Aktuell firma: AB Skuldman &amp; Son</eventDesc1>
+         </companyEventHistory>
+         <companyEventHistory nrg:segment-code="NB6X-17" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfEvent>19561101</dateOfEvent>
+            <eventCategoryCode>01</eventCategoryCode>
+            <eventCategoryDesc>Bolag</eventCategoryDesc>
+            <eventCode>REGI</eventCode>
+            <eventDesc1>Bolaget registrerades</eventDesc1>
+         </companyEventHistory>
+         <companyManagementBoardInfo nrg:segment-code="NB58-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <segmentVersionNumber>001</segmentVersionNumber>
+            <countryRegNumber>556123-4567</countryRegNumber>
+            <dateFromWhenBoardIsUnauthorised>00010101</dateFromWhenBoardIsUnauthorised>
+            <dateFromWhenBoardIsNotComplete>00010101</dateFromWhenBoardIsNotComplete>
+            <dateFromWhichManagIsNotReg>00010101</dateFromWhichManagIsNotReg>
+            <NoOfBoardMembersLowest>001</NoOfBoardMembersLowest>
+            <noOfBoardMembersHighest>003</noOfBoardMembersHighest>
+            <noOfBoardMembersReal>003</noOfBoardMembersReal>
+            <noOfDeputyMembersLowest>000</noOfDeputyMembersLowest>
+            <noOfDeputyMembersHighest>003</noOfDeputyMembersHighest>
+            <noOfDeputyMembersReal>001</noOfDeputyMembersReal>
+            <dateFromWhichBoardIsOffAppointed>19930818</dateFromWhichBoardIsOffAppointed>
+         </companyManagementBoardInfo>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201410</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201409</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201408</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201407</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201406</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-5" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201405</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-6" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201404</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-7" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201403</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-8" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201402</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-9" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201401</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-10" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201312</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <companyRecoveryDebtBalance12Months nrg:segment-code="NB77-11" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfRecoveryDebtBalance>201311</dateOfRecoveryDebtBalance>
+            <totalRecoveryDebtBalancePublicClaim>00000000000</totalRecoveryDebtBalancePublicClaim>
+            <numberOfRecoveryDebtBalanceCasesPublicClaim>000000000</numberOfRecoveryDebtBalanceCasesPublicClaim>
+            <totalRecoveryDebtBalancePrivateClaim>00000000000</totalRecoveryDebtBalancePrivateClaim>
+            <numberOfRecoveryDebtBalanceCasesPrivateClaim>000000000</numberOfRecoveryDebtBalanceCasesPrivateClaim>
+         </companyRecoveryDebtBalance12Months>
+         <financialStatementCommon nrg:segment-code="NB3P-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201312</statementDate>
+            <noOfMonthsCovered>12</noOfMonthsCovered>
+            <totalIncome nrg:alignment="right">231750</totalIncome>
+            <totalOperatingCosts nrg:alignment="right">196496</totalOperatingCosts>
+            <incomeBeforeDepr nrg:alignment="right">35254</incomeBeforeDepr>
+            <deprecation nrg:alignment="right">12688</deprecation>
+            <profitBeforeFinItems nrg:alignment="right">22566</profitBeforeFinItems>
+            <interestIncome nrg:alignment="right">1121</interestIncome>
+            <interestExpenses nrg:alignment="right">6155</interestExpenses>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <incomeAfterFinItems nrg:alignment="right">11861</incomeAfterFinItems>
+            <extraordinaryItems nrg:alignment="right">0</extraordinaryItems>
+            <incomeBeforeAllocations nrg:alignment="right">11861</incomeBeforeAllocations>
+            <incomeBeforeTax nrg:alignment="right">8305</incomeBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <netIncome nrg:alignment="right">-2706</netIncome>
+            <liquidAssets nrg:alignment="right">7101</liquidAssets>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <stocks nrg:alignment="right">48149</stocks>
+            <otherCurrentAssets nrg:alignment="right">19285</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <buildingsHeldForResale nrg:alignment="right">0</buildingsHeldForResale>
+            <blockedAccounts nrg:alignment="right">0</blockedAccounts>
+            <nonDepreciableAssets nrg:alignment="right">13383</nonDepreciableAssets>
+            <depreciableAssets nrg:alignment="right">121646</depreciableAssets>
+            <totalLongTermAssets nrg:alignment="right">135029</totalLongTermAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <accountsPayable nrg:alignment="right">36554</accountsPayable>
+            <otherLiabilities nrg:alignment="right">32592</otherLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <longTermLiabilities nrg:alignment="right">86766</longTermLiabilities>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <issuedShareCapital nrg:alignment="right">10000</issuedShareCapital>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <nonRestrictedEquity nrg:alignment="right">28809</nonRestrictedEquity>
+            <shareholdersEquity nrg:alignment="right">49409</shareholdersEquity>
+            <noOfEmployeesAverage nrg:alignment="right">140</noOfEmployeesAverage>
+            <salaries nrg:alignment="right">25456</salaries>
+            <pledgedAssets nrg:alignment="right">72000</pledgedAssets>
+            <contingentLiabilities nrg:alignment="right">9600</contingentLiabilities>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <equityRatio nrg:alignment="right">34.0</equityRatio>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <interestOnLiabilities nrg:alignment="right">3.6</interestOnLiabilities>
+            <riskmargin nrg:alignment="right">5.6</riskmargin>
+            <liabilityRatio nrg:alignment="right">1.9</liabilityRatio>
+            <interestCover nrg:alignment="right">3.8</interestCover>
+            <turnoverAssets nrg:alignment="right">0.9</turnoverAssets>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+         </financialStatementCommon>
+         <financialStatementCommon nrg:segment-code="NB3P-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201212</statementDate>
+            <noOfMonthsCovered>12</noOfMonthsCovered>
+            <totalIncome nrg:alignment="right">231750</totalIncome>
+            <totalOperatingCosts nrg:alignment="right">196496</totalOperatingCosts>
+            <incomeBeforeDepr nrg:alignment="right">35254</incomeBeforeDepr>
+            <deprecation nrg:alignment="right">12688</deprecation>
+            <profitBeforeFinItems nrg:alignment="right">22566</profitBeforeFinItems>
+            <interestIncome nrg:alignment="right">1121</interestIncome>
+            <interestExpenses nrg:alignment="right">6155</interestExpenses>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <incomeAfterFinItems nrg:alignment="right">11861</incomeAfterFinItems>
+            <extraordinaryItems nrg:alignment="right">0</extraordinaryItems>
+            <incomeBeforeAllocations nrg:alignment="right">11861</incomeBeforeAllocations>
+            <incomeBeforeTax nrg:alignment="right">8305</incomeBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <netIncome nrg:alignment="right">-2706</netIncome>
+            <liquidAssets nrg:alignment="right">7101</liquidAssets>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <stocks nrg:alignment="right">48149</stocks>
+            <otherCurrentAssets nrg:alignment="right">19285</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <buildingsHeldForResale nrg:alignment="right">0</buildingsHeldForResale>
+            <blockedAccounts nrg:alignment="right">0</blockedAccounts>
+            <nonDepreciableAssets nrg:alignment="right">13383</nonDepreciableAssets>
+            <depreciableAssets nrg:alignment="right">121646</depreciableAssets>
+            <totalLongTermAssets nrg:alignment="right">135029</totalLongTermAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <accountsPayable nrg:alignment="right">36554</accountsPayable>
+            <otherLiabilities nrg:alignment="right">32592</otherLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <longTermLiabilities nrg:alignment="right">86766</longTermLiabilities>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <issuedShareCapital nrg:alignment="right">10000</issuedShareCapital>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <nonRestrictedEquity nrg:alignment="right">28809</nonRestrictedEquity>
+            <shareholdersEquity nrg:alignment="right">49409</shareholdersEquity>
+            <noOfEmployeesAverage nrg:alignment="right">140</noOfEmployeesAverage>
+            <salaries nrg:alignment="right">25456</salaries>
+            <pledgedAssets nrg:alignment="right">72000</pledgedAssets>
+            <contingentLiabilities nrg:alignment="right">9600</contingentLiabilities>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <equityRatio nrg:alignment="right">34.0</equityRatio>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <interestOnLiabilities nrg:alignment="right">3.6</interestOnLiabilities>
+            <riskmargin nrg:alignment="right">5.6</riskmargin>
+            <liabilityRatio nrg:alignment="right">1.9</liabilityRatio>
+            <interestCover nrg:alignment="right">3.8</interestCover>
+            <turnoverAssets nrg:alignment="right">0.9</turnoverAssets>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+         </financialStatementCommon>
+         <financialStatementCommon nrg:segment-code="NB3P-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201112</statementDate>
+            <noOfMonthsCovered>12</noOfMonthsCovered>
+            <totalIncome nrg:alignment="right">231750</totalIncome>
+            <totalOperatingCosts nrg:alignment="right">196496</totalOperatingCosts>
+            <incomeBeforeDepr nrg:alignment="right">35254</incomeBeforeDepr>
+            <deprecation nrg:alignment="right">12688</deprecation>
+            <profitBeforeFinItems nrg:alignment="right">22566</profitBeforeFinItems>
+            <interestIncome nrg:alignment="right">1121</interestIncome>
+            <interestExpenses nrg:alignment="right">6155</interestExpenses>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <incomeAfterFinItems nrg:alignment="right">11861</incomeAfterFinItems>
+            <extraordinaryItems nrg:alignment="right">0</extraordinaryItems>
+            <incomeBeforeAllocations nrg:alignment="right">11861</incomeBeforeAllocations>
+            <incomeBeforeTax nrg:alignment="right">8305</incomeBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <netIncome nrg:alignment="right">-2706</netIncome>
+            <liquidAssets nrg:alignment="right">7101</liquidAssets>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <stocks nrg:alignment="right">48149</stocks>
+            <otherCurrentAssets nrg:alignment="right">19285</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <buildingsHeldForResale nrg:alignment="right">0</buildingsHeldForResale>
+            <blockedAccounts nrg:alignment="right">0</blockedAccounts>
+            <nonDepreciableAssets nrg:alignment="right">13383</nonDepreciableAssets>
+            <depreciableAssets nrg:alignment="right">121646</depreciableAssets>
+            <totalLongTermAssets nrg:alignment="right">135029</totalLongTermAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <accountsPayable nrg:alignment="right">36554</accountsPayable>
+            <otherLiabilities nrg:alignment="right">32592</otherLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <longTermLiabilities nrg:alignment="right">86766</longTermLiabilities>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <issuedShareCapital nrg:alignment="right">10000</issuedShareCapital>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <nonRestrictedEquity nrg:alignment="right">28809</nonRestrictedEquity>
+            <shareholdersEquity nrg:alignment="right">49409</shareholdersEquity>
+            <noOfEmployeesAverage nrg:alignment="right">140</noOfEmployeesAverage>
+            <salaries nrg:alignment="right">25456</salaries>
+            <pledgedAssets nrg:alignment="right">72000</pledgedAssets>
+            <contingentLiabilities nrg:alignment="right">9600</contingentLiabilities>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <equityRatio nrg:alignment="right">34.0</equityRatio>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <interestOnLiabilities nrg:alignment="right">3.6</interestOnLiabilities>
+            <riskmargin nrg:alignment="right">5.6</riskmargin>
+            <liabilityRatio nrg:alignment="right">1.9</liabilityRatio>
+            <interestCover nrg:alignment="right">3.8</interestCover>
+            <turnoverAssets nrg:alignment="right">0.9</turnoverAssets>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+         </financialStatementCommon>
+         <financialStatementCommon nrg:segment-code="NB3P-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201012</statementDate>
+            <noOfMonthsCovered>12</noOfMonthsCovered>
+            <totalIncome nrg:alignment="right">231750</totalIncome>
+            <totalOperatingCosts nrg:alignment="right">196496</totalOperatingCosts>
+            <incomeBeforeDepr nrg:alignment="right">35254</incomeBeforeDepr>
+            <deprecation nrg:alignment="right">12688</deprecation>
+            <profitBeforeFinItems nrg:alignment="right">22566</profitBeforeFinItems>
+            <interestIncome nrg:alignment="right">1121</interestIncome>
+            <interestExpenses nrg:alignment="right">6155</interestExpenses>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <incomeAfterFinItems nrg:alignment="right">11861</incomeAfterFinItems>
+            <extraordinaryItems nrg:alignment="right">0</extraordinaryItems>
+            <incomeBeforeAllocations nrg:alignment="right">11861</incomeBeforeAllocations>
+            <incomeBeforeTax nrg:alignment="right">8305</incomeBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <netIncome nrg:alignment="right">-2706</netIncome>
+            <liquidAssets nrg:alignment="right">7101</liquidAssets>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <stocks nrg:alignment="right">48149</stocks>
+            <otherCurrentAssets nrg:alignment="right">19285</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <buildingsHeldForResale nrg:alignment="right">0</buildingsHeldForResale>
+            <blockedAccounts nrg:alignment="right">0</blockedAccounts>
+            <nonDepreciableAssets nrg:alignment="right">13383</nonDepreciableAssets>
+            <depreciableAssets nrg:alignment="right">121646</depreciableAssets>
+            <totalLongTermAssets nrg:alignment="right">135029</totalLongTermAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <accountsPayable nrg:alignment="right">36554</accountsPayable>
+            <otherLiabilities nrg:alignment="right">32592</otherLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <longTermLiabilities nrg:alignment="right">86766</longTermLiabilities>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <issuedShareCapital nrg:alignment="right">10000</issuedShareCapital>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <nonRestrictedEquity nrg:alignment="right">28809</nonRestrictedEquity>
+            <shareholdersEquity nrg:alignment="right">49409</shareholdersEquity>
+            <noOfEmployeesAverage nrg:alignment="right">140</noOfEmployeesAverage>
+            <salaries nrg:alignment="right">25456</salaries>
+            <pledgedAssets nrg:alignment="right">72000</pledgedAssets>
+            <contingentLiabilities nrg:alignment="right">9600</contingentLiabilities>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <equityRatio nrg:alignment="right">34.0</equityRatio>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <interestOnLiabilities nrg:alignment="right">3.6</interestOnLiabilities>
+            <riskmargin nrg:alignment="right">5.6</riskmargin>
+            <liabilityRatio nrg:alignment="right">1.9</liabilityRatio>
+            <interestCover nrg:alignment="right">3.8</interestCover>
+            <turnoverAssets nrg:alignment="right">0.9</turnoverAssets>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+         </financialStatementCommon>
+         <financialStatementCommon nrg:segment-code="NB3P-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>200912</statementDate>
+            <noOfMonthsCovered>12</noOfMonthsCovered>
+            <totalIncome nrg:alignment="right">231750</totalIncome>
+            <totalOperatingCosts nrg:alignment="right">196496</totalOperatingCosts>
+            <incomeBeforeDepr nrg:alignment="right">35254</incomeBeforeDepr>
+            <deprecation nrg:alignment="right">12688</deprecation>
+            <profitBeforeFinItems nrg:alignment="right">22566</profitBeforeFinItems>
+            <interestIncome nrg:alignment="right">1121</interestIncome>
+            <interestExpenses nrg:alignment="right">6155</interestExpenses>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <incomeAfterFinItems nrg:alignment="right">11861</incomeAfterFinItems>
+            <extraordinaryItems nrg:alignment="right">0</extraordinaryItems>
+            <incomeBeforeAllocations nrg:alignment="right">11861</incomeBeforeAllocations>
+            <incomeBeforeTax nrg:alignment="right">8305</incomeBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <netIncome nrg:alignment="right">-2706</netIncome>
+            <liquidAssets nrg:alignment="right">7101</liquidAssets>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <stocks nrg:alignment="right">48149</stocks>
+            <otherCurrentAssets nrg:alignment="right">19285</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <buildingsHeldForResale nrg:alignment="right">0</buildingsHeldForResale>
+            <blockedAccounts nrg:alignment="right">0</blockedAccounts>
+            <nonDepreciableAssets nrg:alignment="right">13383</nonDepreciableAssets>
+            <depreciableAssets nrg:alignment="right">121646</depreciableAssets>
+            <totalLongTermAssets nrg:alignment="right">135029</totalLongTermAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <accountsPayable nrg:alignment="right">36554</accountsPayable>
+            <otherLiabilities nrg:alignment="right">32592</otherLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <longTermLiabilities nrg:alignment="right">86766</longTermLiabilities>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <issuedShareCapital nrg:alignment="right">10000</issuedShareCapital>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <nonRestrictedEquity nrg:alignment="right">28809</nonRestrictedEquity>
+            <shareholdersEquity nrg:alignment="right">49409</shareholdersEquity>
+            <noOfEmployeesAverage nrg:alignment="right">140</noOfEmployeesAverage>
+            <salaries nrg:alignment="right">25456</salaries>
+            <pledgedAssets nrg:alignment="right">72000</pledgedAssets>
+            <contingentLiabilities nrg:alignment="right">9600</contingentLiabilities>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <equityRatio nrg:alignment="right">34.0</equityRatio>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <interestOnLiabilities nrg:alignment="right">3.6</interestOnLiabilities>
+            <riskmargin nrg:alignment="right">5.6</riskmargin>
+            <liabilityRatio nrg:alignment="right">1.9</liabilityRatio>
+            <interestCover nrg:alignment="right">3.8</interestCover>
+            <turnoverAssets nrg:alignment="right">0.9</turnoverAssets>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+         </financialStatementCommon>
+         <financialStatementKeyFigures nrg:segment-code="NB61-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201312</statementDate>
+            <liquidAssetsOfTurnover nrg:alignment="right">3.1</liquidAssetsOfTurnover>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <interestCoverage nrg:alignment="right">3.8</interestCoverage>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <equityCapitalRatio nrg:alignment="right">34.0</equityCapitalRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <forFutureUse1 nrg:alignment="right">3.6</forFutureUse1>
+            <forFutureUse2 nrg:alignment="right">5.6</forFutureUse2>
+            <forFutureUse3 nrg:alignment="right">1.9</forFutureUse3>
+            <forFutureUse4 nrg:alignment="right">0.9</forFutureUse4>
+            <branchLiqAssetsOfTurno nrg:alignment="right">3.8</branchLiqAssetsOfTurno>
+            <branchProfitMargin nrg:alignment="right">3.8</branchProfitMargin>
+            <branchInterestCoverage nrg:alignment="right">0.0</branchInterestCoverage>
+            <branchReturnOnTotAssets nrg:alignment="right">9.9</branchReturnOnTotAssets>
+            <branchReturnOnEquity nrg:alignment="right">15.9</branchReturnOnEquity>
+            <branchEquityCapitalRatio nrg:alignment="right">33.6</branchEquityCapitalRatio>
+            <branchCurrentRatio nrg:alignment="right">143.3</branchCurrentRatio>
+            <branchQuickRatio nrg:alignment="right">123.0</branchQuickRatio>
+            <forFutureUse6 nrg:alignment="right">2.7</forFutureUse6>
+            <forFutureUse7 nrg:alignment="right">6.5</forFutureUse7>
+            <forFutureUse8 nrg:alignment="right">2.0</forFutureUse8>
+            <forFutureUse9 nrg:alignment="right">2.3</forFutureUse9>
+            <operationalProfitPercOfTurnover nrg:alignment="right">15.2</operationalProfitPercOfTurnover>
+            <branchOperationalProfitPercOfTurnover nrg:alignment="right">5.1</branchOperationalProfitPercOfTurnover>
+            <incomeAfterFinItemsPercOfTurnover nrg:alignment="right">5.1</incomeAfterFinItemsPercOfTurnover>
+            <labourCostsPercOfTurnover nrg:alignment="right">16.4</labourCostsPercOfTurnover>
+            <branchLabourCostsPercOfTurnover nrg:alignment="right">49.3</branchLabourCostsPercOfTurnover>
+            <cashflowPercOfTurnover nrg:alignment="right">8.0</cashflowPercOfTurnover>
+            <branchCashflowPercOfTurnover nrg:alignment="right">20.8</branchCashflowPercOfTurnover>
+            <cashflowPercOfFinancialExp nrg:alignment="right">114.5</cashflowPercOfFinancialExp>
+            <branchCashflowPercOfFinancialExp nrg:alignment="right">0.0</branchCashflowPercOfFinancialExp>
+            <workingCapitalPercOfTurnover nrg:alignment="right">22.5</workingCapitalPercOfTurnover>
+            <branchWorkingCapitalPercOfTurnover nrg:alignment="right">6.9</branchWorkingCapitalPercOfTurnover>
+            <accountsReceivablesPercOfTurnover nrg:alignment="right">20.2</accountsReceivablesPercOfTurnover>
+            <branchAccountsReceivablesPercOfTurnover nrg:alignment="right">8.4</branchAccountsReceivablesPercOfTurnover>
+            <inventoriesPercOfTurnover nrg:alignment="right">20.8</inventoriesPercOfTurnover>
+            <branchInventoriesPercOfTurnover nrg:alignment="right">0.6</branchInventoriesPercOfTurnover>
+            <currentLiabilitiesPercOfTurnover nrg:alignment="right">29.8</currentLiabilitiesPercOfTurnover>
+            <branchCurrentLiabilitiesPercOfTurnover nrg:alignment="right">17.2</branchCurrentLiabilitiesPercOfTurnover>
+            <totalEquityPercOfAssets nrg:alignment="right">39.2</totalEquityPercOfAssets>
+            <branchTotalEquityPercOfAssets nrg:alignment="right">37.3</branchTotalEquityPercOfAssets>
+            <assetsPledgedPercOfLiabilities nrg:alignment="right">42.5</assetsPledgedPercOfLiabilities>
+            <branchAssetsPledgedPercOfLiabilities nrg:alignment="right">56.2</branchAssetsPledgedPercOfLiabilities>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+            <branchGrowthInTurnover nrg:alignment="right">-2.8</branchGrowthInTurnover>
+            <growthInTotalCapital nrg:alignment="right">0.0</growthInTotalCapital>
+            <branchGrowthInTotalCapital nrg:alignment="right">4.1</branchGrowthInTotalCapital>
+            <growthInNetWorth nrg:alignment="right">0.0</growthInNetWorth>
+            <branchGrowthInNetWorth nrg:alignment="right">6.0</branchGrowthInNetWorth>
+            <depreciationPercOfDepreciatedAssets nrg:alignment="right">10.4</depreciationPercOfDepreciatedAssets>
+            <branchDepreciationPercOfDepreciatedAssets nrg:alignment="right">22.1</branchDepreciationPercOfDepreciatedAssets>
+            <branchProfitLossAfterFinancialItems nrg:alignment="right">1,454</branchProfitLossAfterFinancialItems>
+            <branchTurnoverPerEmployee nrg:alignment="right">720</branchTurnoverPerEmployee>
+            <branchNetWorth nrg:alignment="right">8,331</branchNetWorth>
+            <branchTotalLiabilities nrg:alignment="right">15,952</branchTotalLiabilities>
+            <branchTotalCapital nrg:alignment="right">27,483</branchTotalCapital>
+         </financialStatementKeyFigures>
+         <financialStatementKeyFigures nrg:segment-code="NB61-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201212</statementDate>
+            <liquidAssetsOfTurnover nrg:alignment="right">3.1</liquidAssetsOfTurnover>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <interestCoverage nrg:alignment="right">3.8</interestCoverage>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <equityCapitalRatio nrg:alignment="right">34.0</equityCapitalRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <forFutureUse1 nrg:alignment="right">3.6</forFutureUse1>
+            <forFutureUse2 nrg:alignment="right">5.6</forFutureUse2>
+            <forFutureUse3 nrg:alignment="right">1.9</forFutureUse3>
+            <forFutureUse4 nrg:alignment="right">0.9</forFutureUse4>
+            <operationalProfitPercOfTurnover nrg:alignment="right">15.2</operationalProfitPercOfTurnover>
+            <incomeAfterFinItemsPercOfTurnover nrg:alignment="right">5.1</incomeAfterFinItemsPercOfTurnover>
+            <labourCostsPercOfTurnover nrg:alignment="right">16.4</labourCostsPercOfTurnover>
+            <cashflowPercOfTurnover nrg:alignment="right">8.0</cashflowPercOfTurnover>
+            <cashflowPercOfFinancialExp nrg:alignment="right">114.5</cashflowPercOfFinancialExp>
+            <workingCapitalPercOfTurnover nrg:alignment="right">22.5</workingCapitalPercOfTurnover>
+            <accountsReceivablesPercOfTurnover nrg:alignment="right">20.2</accountsReceivablesPercOfTurnover>
+            <inventoriesPercOfTurnover nrg:alignment="right">20.8</inventoriesPercOfTurnover>
+            <currentLiabilitiesPercOfTurnover nrg:alignment="right">29.8</currentLiabilitiesPercOfTurnover>
+            <totalEquityPercOfAssets nrg:alignment="right">39.2</totalEquityPercOfAssets>
+            <assetsPledgedPercOfLiabilities nrg:alignment="right">42.5</assetsPledgedPercOfLiabilities>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+            <growthInTotalCapital nrg:alignment="right">0.0</growthInTotalCapital>
+            <growthInNetWorth nrg:alignment="right">0.0</growthInNetWorth>
+            <depreciationPercOfDepreciatedAssets nrg:alignment="right">10.4</depreciationPercOfDepreciatedAssets>
+         </financialStatementKeyFigures>
+         <financialStatementKeyFigures nrg:segment-code="NB61-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201112</statementDate>
+            <liquidAssetsOfTurnover nrg:alignment="right">3.1</liquidAssetsOfTurnover>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <interestCoverage nrg:alignment="right">3.8</interestCoverage>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <equityCapitalRatio nrg:alignment="right">34.0</equityCapitalRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <forFutureUse1 nrg:alignment="right">3.6</forFutureUse1>
+            <forFutureUse2 nrg:alignment="right">5.6</forFutureUse2>
+            <forFutureUse3 nrg:alignment="right">1.9</forFutureUse3>
+            <forFutureUse4 nrg:alignment="right">0.9</forFutureUse4>
+            <operationalProfitPercOfTurnover nrg:alignment="right">15.2</operationalProfitPercOfTurnover>
+            <incomeAfterFinItemsPercOfTurnover nrg:alignment="right">5.1</incomeAfterFinItemsPercOfTurnover>
+            <labourCostsPercOfTurnover nrg:alignment="right">16.4</labourCostsPercOfTurnover>
+            <cashflowPercOfTurnover nrg:alignment="right">8.0</cashflowPercOfTurnover>
+            <cashflowPercOfFinancialExp nrg:alignment="right">114.5</cashflowPercOfFinancialExp>
+            <workingCapitalPercOfTurnover nrg:alignment="right">22.5</workingCapitalPercOfTurnover>
+            <accountsReceivablesPercOfTurnover nrg:alignment="right">20.2</accountsReceivablesPercOfTurnover>
+            <inventoriesPercOfTurnover nrg:alignment="right">20.8</inventoriesPercOfTurnover>
+            <currentLiabilitiesPercOfTurnover nrg:alignment="right">29.8</currentLiabilitiesPercOfTurnover>
+            <totalEquityPercOfAssets nrg:alignment="right">39.2</totalEquityPercOfAssets>
+            <assetsPledgedPercOfLiabilities nrg:alignment="right">42.5</assetsPledgedPercOfLiabilities>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+            <growthInTotalCapital nrg:alignment="right">0.0</growthInTotalCapital>
+            <growthInNetWorth nrg:alignment="right">0.0</growthInNetWorth>
+            <depreciationPercOfDepreciatedAssets nrg:alignment="right">10.4</depreciationPercOfDepreciatedAssets>
+         </financialStatementKeyFigures>
+         <financialStatementKeyFigures nrg:segment-code="NB61-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>201012</statementDate>
+            <liquidAssetsOfTurnover nrg:alignment="right">3.1</liquidAssetsOfTurnover>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <interestCoverage nrg:alignment="right">3.8</interestCoverage>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <equityCapitalRatio nrg:alignment="right">34.0</equityCapitalRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <forFutureUse1 nrg:alignment="right">3.6</forFutureUse1>
+            <forFutureUse2 nrg:alignment="right">5.6</forFutureUse2>
+            <forFutureUse3 nrg:alignment="right">1.9</forFutureUse3>
+            <forFutureUse4 nrg:alignment="right">0.9</forFutureUse4>
+            <operationalProfitPercOfTurnover nrg:alignment="right">15.2</operationalProfitPercOfTurnover>
+            <incomeAfterFinItemsPercOfTurnover nrg:alignment="right">5.1</incomeAfterFinItemsPercOfTurnover>
+            <labourCostsPercOfTurnover nrg:alignment="right">16.4</labourCostsPercOfTurnover>
+            <cashflowPercOfTurnover nrg:alignment="right">8.0</cashflowPercOfTurnover>
+            <cashflowPercOfFinancialExp nrg:alignment="right">114.5</cashflowPercOfFinancialExp>
+            <workingCapitalPercOfTurnover nrg:alignment="right">22.5</workingCapitalPercOfTurnover>
+            <accountsReceivablesPercOfTurnover nrg:alignment="right">20.2</accountsReceivablesPercOfTurnover>
+            <inventoriesPercOfTurnover nrg:alignment="right">20.8</inventoriesPercOfTurnover>
+            <currentLiabilitiesPercOfTurnover nrg:alignment="right">29.8</currentLiabilitiesPercOfTurnover>
+            <totalEquityPercOfAssets nrg:alignment="right">39.2</totalEquityPercOfAssets>
+            <assetsPledgedPercOfLiabilities nrg:alignment="right">42.5</assetsPledgedPercOfLiabilities>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+            <growthInTotalCapital nrg:alignment="right">0.0</growthInTotalCapital>
+            <growthInNetWorth nrg:alignment="right">0.0</growthInNetWorth>
+            <depreciationPercOfDepreciatedAssets nrg:alignment="right">10.4</depreciationPercOfDepreciatedAssets>
+         </financialStatementKeyFigures>
+         <financialStatementKeyFigures nrg:segment-code="NB61-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <statementDate>200912</statementDate>
+            <liquidAssetsOfTurnover nrg:alignment="right">3.1</liquidAssetsOfTurnover>
+            <profitMargin nrg:alignment="right">10.2</profitMargin>
+            <interestCoverage nrg:alignment="right">3.8</interestCoverage>
+            <returnOnTotalAssets nrg:alignment="right">9.2</returnOnTotalAssets>
+            <returnOnEquity nrg:alignment="right">13.6</returnOnEquity>
+            <equityCapitalRatio nrg:alignment="right">34.0</equityCapitalRatio>
+            <currentRatio nrg:alignment="right">175.5</currentRatio>
+            <quickRatio nrg:alignment="right">105.9</quickRatio>
+            <forFutureUse1 nrg:alignment="right">3.6</forFutureUse1>
+            <forFutureUse2 nrg:alignment="right">5.6</forFutureUse2>
+            <forFutureUse3 nrg:alignment="right">1.9</forFutureUse3>
+            <forFutureUse4 nrg:alignment="right">0.9</forFutureUse4>
+            <operationalProfitPercOfTurnover nrg:alignment="right">15.2</operationalProfitPercOfTurnover>
+            <incomeAfterFinItemsPercOfTurnover nrg:alignment="right">5.1</incomeAfterFinItemsPercOfTurnover>
+            <labourCostsPercOfTurnover nrg:alignment="right">16.4</labourCostsPercOfTurnover>
+            <cashflowPercOfTurnover nrg:alignment="right">8.0</cashflowPercOfTurnover>
+            <cashflowPercOfFinancialExp nrg:alignment="right">114.5</cashflowPercOfFinancialExp>
+            <workingCapitalPercOfTurnover nrg:alignment="right">22.5</workingCapitalPercOfTurnover>
+            <accountsReceivablesPercOfTurnover nrg:alignment="right">20.2</accountsReceivablesPercOfTurnover>
+            <inventoriesPercOfTurnover nrg:alignment="right">20.8</inventoriesPercOfTurnover>
+            <currentLiabilitiesPercOfTurnover nrg:alignment="right">29.8</currentLiabilitiesPercOfTurnover>
+            <totalEquityPercOfAssets nrg:alignment="right">39.2</totalEquityPercOfAssets>
+            <assetsPledgedPercOfLiabilities nrg:alignment="right">42.5</assetsPledgedPercOfLiabilities>
+            <growthInTurnover nrg:alignment="right">0.0</growthInTurnover>
+            <growthInTotalCapital nrg:alignment="right">0.0</growthInTotalCapital>
+            <growthInNetWorth nrg:alignment="right">0.0</growthInNetWorth>
+            <depreciationPercOfDepreciatedAssets nrg:alignment="right">10.4</depreciationPercOfDepreciatedAssets>
+         </financialStatementKeyFigures>
+         <financialStatementSweden nrg:segment-code="NB60-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <accountPeriod>201312</accountPeriod>
+            <noOfMonthsCoveredByPl>12</noOfMonthsCoveredByPl>
+            <classificationCode>K</classificationCode>
+            <totalInvoicing nrg:alignment="right">0</totalInvoicing>
+            <netSales nrg:alignment="right">231750</netSales>
+            <changeInInventories nrg:alignment="right">0</changeInInventories>
+            <workPerformForOwnUse nrg:alignment="right">0</workPerformForOwnUse>
+            <otherOperatingIncomeK nrg:alignment="right">0</otherOperatingIncomeK>
+            <totalRenewal nrg:alignment="right">231750</totalRenewal>
+            <costOfGoods nrg:alignment="right">0</costOfGoods>
+            <grossProfitLoss nrg:alignment="right">175301</grossProfitLoss>
+            <sellingExpenses nrg:alignment="right">0</sellingExpenses>
+            <administrativeExpenses nrg:alignment="right">0</administrativeExpenses>
+            <researchAndDevCosts nrg:alignment="right">0</researchAndDevCosts>
+            <itemsAffectingComparability1 nrg:alignment="right">0</itemsAffectingComparability1>
+            <otherOperatingIncomeF nrg:alignment="right">0</otherOperatingIncomeF>
+            <otherOperatingExpenses1 nrg:alignment="right">0</otherOperatingExpenses1>
+            <rawMaterialsAndConsumables nrg:alignment="right">69998</rawMaterialsAndConsumables>
+            <goodsForResale nrg:alignment="right">56449</goodsForResale>
+            <otherExternalCosts nrg:alignment="right">15812</otherExternalCosts>
+            <personnelCosts nrg:alignment="right">36025</personnelCosts>
+            <depreciations nrg:alignment="right">12688</depreciations>
+            <itemsAffectingComparability2 nrg:alignment="right">0</itemsAffectingComparability2>
+            <otherOperatingExpenses2 nrg:alignment="right">18212</otherOperatingExpenses2>
+            <totalOperatingExpenses nrg:alignment="right">209184</totalOperatingExpenses>
+            <ofWhichDepreciations nrg:alignment="right">12688</ofWhichDepreciations>
+            <operatingProfitLoss nrg:alignment="right">22566</operatingProfitLoss>
+            <resultFromParticipation nrg:alignment="right">0</resultFromParticipation>
+            <interestIncomeFromGroup nrg:alignment="right">0</interestIncomeFromGroup>
+            <externalInterestIncome nrg:alignment="right">1121</externalInterestIncome>
+            <otherFinancialIncome nrg:alignment="right">0</otherFinancialIncome>
+            <totalFinancialIncome nrg:alignment="right">1121</totalFinancialIncome>
+            <interestExpenseFromGroup nrg:alignment="right">0</interestExpenseFromGroup>
+            <externalInterestExpenses nrg:alignment="right">6155</externalInterestExpenses>
+            <extraFinCosts nrg:alignment="right">6155</extraFinCosts>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <totalFinancialCosts nrg:alignment="right">8646</totalFinancialCosts>
+            <financialItemsAffecting nrg:alignment="right">-3180</financialItemsAffecting>
+            <profitLossAfter nrg:alignment="right">11861</profitLossAfter>
+            <extraordinaryIncome nrg:alignment="right">0</extraordinaryIncome>
+            <extraExpenses nrg:alignment="right">0</extraExpenses>
+            <totalExtraItems nrg:alignment="right">0</totalExtraItems>
+            <resultBeforeAllocations nrg:alignment="right">11861</resultBeforeAllocations>
+            <groupContribution1 nrg:alignment="right">0</groupContribution1>
+            <shareholdersContribution1 nrg:alignment="right">0</shareholdersContribution1>
+            <appropriations nrg:alignment="right">-3556</appropriations>
+            <profitLossBeforeTax nrg:alignment="right">8305</profitLossBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <minorityShareholding1 nrg:alignment="right">0</minorityShareholding1>
+            <netProfitLossForTheYear1 nrg:alignment="right">-2706</netProfitLossForTheYear1>
+            <subscribedCapitalUnpaid nrg:alignment="right">0</subscribedCapitalUnpaid>
+            <capitalizedExpenditure nrg:alignment="right">0</capitalizedExpenditure>
+            <concessionsEtc nrg:alignment="right">0</concessionsEtc>
+            <goodwill nrg:alignment="right">0</goodwill>
+            <otherIntangibleAssets nrg:alignment="right">16800</otherIntangibleAssets>
+            <totalIntagibleAssets nrg:alignment="right">16800</totalIntagibleAssets>
+            <landAndBuildings nrg:alignment="right">28645</landAndBuildings>
+            <land nrg:alignment="right">0</land>
+            <machinery nrg:alignment="right">0</machinery>
+            <equipment nrg:alignment="right">0</equipment>
+            <totalMachineryAndEquip nrg:alignment="right">40033</totalMachineryAndEquip>
+            <otherTangibleAssetsNon nrg:alignment="right">0</otherTangibleAssetsNon>
+            <otherTangibleAssetsDep nrg:alignment="right">36168</otherTangibleAssetsDep>
+            <totalFixedAssets1 nrg:alignment="right">104846</totalFixedAssets1>
+            <participationInGroup nrg:alignment="right">0</participationInGroup>
+            <receivablesFromGroup1 nrg:alignment="right">0</receivablesFromGroup1>
+            <loansToPartner nrg:alignment="right">0</loansToPartner>
+            <otherFinancialAssets nrg:alignment="right">13383</otherFinancialAssets>
+            <totalFinancialAssets nrg:alignment="right">13383</totalFinancialAssets>
+            <totalFixedAssets2 nrg:alignment="right">104846</totalFixedAssets2>
+            <nonDeprFixedAssets nrg:alignment="right">13383</nonDeprFixedAssets>
+            <workInProgress nrg:alignment="right">0</workInProgress>
+            <otherInventories nrg:alignment="right">48149</otherInventories>
+            <totalInventories nrg:alignment="right">48149</totalInventories>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <receivablesFromGroup2 nrg:alignment="right">0</receivablesFromGroup2>
+            <otherReceivables nrg:alignment="right">19285</otherReceivables>
+            <totalReceivables nrg:alignment="right">66126</totalReceivables>
+            <totalShortTermInvestments nrg:alignment="right">0</totalShortTermInvestments>
+            <cashAndBankBalances nrg:alignment="right">7101</cashAndBankBalances>
+            <otherCurrentAssets nrg:alignment="right">0</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <shareCapital nrg:alignment="right">10000</shareCapital>
+            <sharePremiumReserve nrg:alignment="right">0</sharePremiumReserve>
+            <revaluationReserve nrg:alignment="right">0</revaluationReserve>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <totalRestrictedEquity nrg:alignment="right">20600</totalRestrictedEquity>
+            <profitOrLossBroughtForw nrg:alignment="right">31515</profitOrLossBroughtForw>
+            <groupContribution2 nrg:alignment="right">0</groupContribution2>
+            <shareholdersContribution2 nrg:alignment="right">0</shareholdersContribution2>
+            <netProfitLossForTheYear2 nrg:alignment="right">-2706</netProfitLossForTheYear2>
+            <totalNonRestrictedCapital nrg:alignment="right">28809</totalNonRestrictedCapital>
+            <totalEquityAndLiability1 nrg:alignment="right">49409</totalEquityAndLiability1>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <minorityShareholding2 nrg:alignment="right">0</minorityShareholding2>
+            <totalAllocations nrg:alignment="right">0</totalAllocations>
+            <bondLoans nrg:alignment="right">0</bondLoans>
+            <liaToCreditInstitutions nrg:alignment="right">83519</liaToCreditInstitutions>
+            <liaToGroupCompLong nrg:alignment="right">0</liaToGroupCompLong>
+            <otherLongTermLiabilities nrg:alignment="right">3247</otherLongTermLiabilities>
+            <totalLongTermLiabilities nrg:alignment="right">86766</totalLongTermLiabilities>
+            <liaToCreditInstShort nrg:alignment="right">16213</liaToCreditInstShort>
+            <accountsPayableTrade nrg:alignment="right">36554</accountsPayableTrade>
+            <liaToGroupCompShort nrg:alignment="right">0</liaToGroupCompShort>
+            <otherCurrentLiabilities nrg:alignment="right">16379</otherCurrentLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <totalEquityAndLiability2 nrg:alignment="right">256405</totalEquityAndLiability2>
+            <floatingCharges nrg:alignment="right">68000</floatingCharges>
+            <propertyMortgage nrg:alignment="right">4000</propertyMortgage>
+            <otherSecurities nrg:alignment="right">0</otherSecurities>
+            <totalSecurities nrg:alignment="right">72000</totalSecurities>
+            <conditionalShareholders nrg:alignment="right">0</conditionalShareholders>
+            <otherContingentLiab nrg:alignment="right">9600</otherContingentLiab>
+            <totalContingentLiab nrg:alignment="right">9600</totalContingentLiab>
+            <noOfEmployees nrg:alignment="right">140</noOfEmployees>
+            <salariesAndEmoluments nrg:alignment="right">2489</salariesAndEmoluments>
+            <bonusToBoardMembers nrg:alignment="right">0</bonusToBoardMembers>
+            <salariesToOthers nrg:alignment="right">25456</salariesToOthers>
+            <incentiveWagesToEmp nrg:alignment="right">0</incentiveWagesToEmp>
+            <socialCosts nrg:alignment="right">12545</socialCosts>
+            <severencePay>J</severencePay>
+            <netInterestIncome nrg:alignment="right">0</netInterestIncome>
+            <currentAccountCredit nrg:alignment="right">58000</currentAccountCredit>
+            <usedAccountCredit nrg:alignment="right">57500</usedAccountCredit>
+            <protocolFromTheGeneral>J</protocolFromTheGeneral>
+            <dividend nrg:alignment="right">4000</dividend>
+            <turnoverPerEmployee nrg:alignment="right">1655</turnoverPerEmployee>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <totalLiability nrg:alignment="right">169347</totalLiability>
+            <totalCapital nrg:alignment="right">256405</totalCapital>
+            <resultBeforeDepreciationPercOfRevenue nrg:alignment="right">15.2</resultBeforeDepreciationPercOfRevenue>
+            <profitLossAfterDepreciationPercOfRevenue nrg:alignment="right">9.7</profitLossAfterDepreciationPercOfRevenue>
+            <profitLossAfterFinancialItemsPercOfRevenue nrg:alignment="right">5.1</profitLossAfterFinancialItemsPercOfRevenue>
+            <profitLossBeforeTaxPercOfRevenue nrg:alignment="right">3.6</profitLossBeforeTaxPercOfRevenue>
+            <netIncomePercOfRevenue nrg:alignment="right">-1.2</netIncomePercOfRevenue>
+            <totalCurrentAssetsPercOfAssets nrg:alignment="right">47.3</totalCurrentAssetsPercOfAssets>
+            <totalLongTermAssetsPercOfAssets nrg:alignment="right">52.7</totalLongTermAssetsPercOfAssets>
+            <totalCurrentLiabilitiesPercOfLiabilities nrg:alignment="right">27.0</totalCurrentLiabilitiesPercOfLiabilities>
+            <longTermLiabilitiesPercOfLiabilities nrg:alignment="right">33.8</longTermLiabilitiesPercOfLiabilities>
+            <untaxedReservesPercOfLiabilities nrg:alignment="right">19.9</untaxedReservesPercOfLiabilities>
+            <shareholdersEquityPercOfLiabilities nrg:alignment="right">19.3</shareholdersEquityPercOfLiabilities>
+         </financialStatementSweden>
+         <financialStatementSweden nrg:segment-code="NB60-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <accountPeriod>201212</accountPeriod>
+            <noOfMonthsCoveredByPl>12</noOfMonthsCoveredByPl>
+            <classificationCode>K</classificationCode>
+            <totalInvoicing nrg:alignment="right">0</totalInvoicing>
+            <netSales nrg:alignment="right">231750</netSales>
+            <changeInInventories nrg:alignment="right">0</changeInInventories>
+            <workPerformForOwnUse nrg:alignment="right">0</workPerformForOwnUse>
+            <otherOperatingIncomeK nrg:alignment="right">0</otherOperatingIncomeK>
+            <totalRenewal nrg:alignment="right">231750</totalRenewal>
+            <costOfGoods nrg:alignment="right">0</costOfGoods>
+            <grossProfitLoss nrg:alignment="right">175301</grossProfitLoss>
+            <sellingExpenses nrg:alignment="right">0</sellingExpenses>
+            <administrativeExpenses nrg:alignment="right">0</administrativeExpenses>
+            <researchAndDevCosts nrg:alignment="right">0</researchAndDevCosts>
+            <itemsAffectingComparability1 nrg:alignment="right">0</itemsAffectingComparability1>
+            <otherOperatingIncomeF nrg:alignment="right">0</otherOperatingIncomeF>
+            <otherOperatingExpenses1 nrg:alignment="right">0</otherOperatingExpenses1>
+            <rawMaterialsAndConsumables nrg:alignment="right">69998</rawMaterialsAndConsumables>
+            <goodsForResale nrg:alignment="right">56449</goodsForResale>
+            <otherExternalCosts nrg:alignment="right">15812</otherExternalCosts>
+            <personnelCosts nrg:alignment="right">36025</personnelCosts>
+            <depreciations nrg:alignment="right">12688</depreciations>
+            <itemsAffectingComparability2 nrg:alignment="right">0</itemsAffectingComparability2>
+            <otherOperatingExpenses2 nrg:alignment="right">18212</otherOperatingExpenses2>
+            <totalOperatingExpenses nrg:alignment="right">209184</totalOperatingExpenses>
+            <ofWhichDepreciations nrg:alignment="right">12688</ofWhichDepreciations>
+            <operatingProfitLoss nrg:alignment="right">22566</operatingProfitLoss>
+            <resultFromParticipation nrg:alignment="right">0</resultFromParticipation>
+            <interestIncomeFromGroup nrg:alignment="right">0</interestIncomeFromGroup>
+            <externalInterestIncome nrg:alignment="right">1121</externalInterestIncome>
+            <otherFinancialIncome nrg:alignment="right">0</otherFinancialIncome>
+            <totalFinancialIncome nrg:alignment="right">1121</totalFinancialIncome>
+            <interestExpenseFromGroup nrg:alignment="right">0</interestExpenseFromGroup>
+            <externalInterestExpenses nrg:alignment="right">6155</externalInterestExpenses>
+            <extraFinCosts nrg:alignment="right">6155</extraFinCosts>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <totalFinancialCosts nrg:alignment="right">8646</totalFinancialCosts>
+            <financialItemsAffecting nrg:alignment="right">-3180</financialItemsAffecting>
+            <profitLossAfter nrg:alignment="right">11861</profitLossAfter>
+            <extraordinaryIncome nrg:alignment="right">0</extraordinaryIncome>
+            <extraExpenses nrg:alignment="right">0</extraExpenses>
+            <totalExtraItems nrg:alignment="right">0</totalExtraItems>
+            <resultBeforeAllocations nrg:alignment="right">11861</resultBeforeAllocations>
+            <groupContribution1 nrg:alignment="right">0</groupContribution1>
+            <shareholdersContribution1 nrg:alignment="right">0</shareholdersContribution1>
+            <appropriations nrg:alignment="right">-3556</appropriations>
+            <profitLossBeforeTax nrg:alignment="right">8305</profitLossBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <minorityShareholding1 nrg:alignment="right">0</minorityShareholding1>
+            <netProfitLossForTheYear1 nrg:alignment="right">-2706</netProfitLossForTheYear1>
+            <subscribedCapitalUnpaid nrg:alignment="right">0</subscribedCapitalUnpaid>
+            <capitalizedExpenditure nrg:alignment="right">0</capitalizedExpenditure>
+            <concessionsEtc nrg:alignment="right">0</concessionsEtc>
+            <goodwill nrg:alignment="right">0</goodwill>
+            <otherIntangibleAssets nrg:alignment="right">16800</otherIntangibleAssets>
+            <totalIntagibleAssets nrg:alignment="right">16800</totalIntagibleAssets>
+            <landAndBuildings nrg:alignment="right">28645</landAndBuildings>
+            <land nrg:alignment="right">0</land>
+            <machinery nrg:alignment="right">0</machinery>
+            <equipment nrg:alignment="right">0</equipment>
+            <totalMachineryAndEquip nrg:alignment="right">40033</totalMachineryAndEquip>
+            <otherTangibleAssetsNon nrg:alignment="right">0</otherTangibleAssetsNon>
+            <otherTangibleAssetsDep nrg:alignment="right">36168</otherTangibleAssetsDep>
+            <totalFixedAssets1 nrg:alignment="right">104846</totalFixedAssets1>
+            <participationInGroup nrg:alignment="right">0</participationInGroup>
+            <receivablesFromGroup1 nrg:alignment="right">0</receivablesFromGroup1>
+            <loansToPartner nrg:alignment="right">0</loansToPartner>
+            <otherFinancialAssets nrg:alignment="right">13383</otherFinancialAssets>
+            <totalFinancialAssets nrg:alignment="right">13383</totalFinancialAssets>
+            <totalFixedAssets2 nrg:alignment="right">104846</totalFixedAssets2>
+            <nonDeprFixedAssets nrg:alignment="right">13383</nonDeprFixedAssets>
+            <workInProgress nrg:alignment="right">0</workInProgress>
+            <otherInventories nrg:alignment="right">48149</otherInventories>
+            <totalInventories nrg:alignment="right">48149</totalInventories>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <receivablesFromGroup2 nrg:alignment="right">0</receivablesFromGroup2>
+            <otherReceivables nrg:alignment="right">19285</otherReceivables>
+            <totalReceivables nrg:alignment="right">66126</totalReceivables>
+            <totalShortTermInvestments nrg:alignment="right">0</totalShortTermInvestments>
+            <cashAndBankBalances nrg:alignment="right">7101</cashAndBankBalances>
+            <otherCurrentAssets nrg:alignment="right">0</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <shareCapital nrg:alignment="right">10000</shareCapital>
+            <sharePremiumReserve nrg:alignment="right">0</sharePremiumReserve>
+            <revaluationReserve nrg:alignment="right">0</revaluationReserve>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <totalRestrictedEquity nrg:alignment="right">20600</totalRestrictedEquity>
+            <profitOrLossBroughtForw nrg:alignment="right">31515</profitOrLossBroughtForw>
+            <groupContribution2 nrg:alignment="right">0</groupContribution2>
+            <shareholdersContribution2 nrg:alignment="right">0</shareholdersContribution2>
+            <netProfitLossForTheYear2 nrg:alignment="right">-2706</netProfitLossForTheYear2>
+            <totalNonRestrictedCapital nrg:alignment="right">28809</totalNonRestrictedCapital>
+            <totalEquityAndLiability1 nrg:alignment="right">49409</totalEquityAndLiability1>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <minorityShareholding2 nrg:alignment="right">0</minorityShareholding2>
+            <totalAllocations nrg:alignment="right">0</totalAllocations>
+            <bondLoans nrg:alignment="right">0</bondLoans>
+            <liaToCreditInstitutions nrg:alignment="right">83519</liaToCreditInstitutions>
+            <liaToGroupCompLong nrg:alignment="right">0</liaToGroupCompLong>
+            <otherLongTermLiabilities nrg:alignment="right">3247</otherLongTermLiabilities>
+            <totalLongTermLiabilities nrg:alignment="right">86766</totalLongTermLiabilities>
+            <liaToCreditInstShort nrg:alignment="right">16213</liaToCreditInstShort>
+            <accountsPayableTrade nrg:alignment="right">36554</accountsPayableTrade>
+            <liaToGroupCompShort nrg:alignment="right">0</liaToGroupCompShort>
+            <otherCurrentLiabilities nrg:alignment="right">16379</otherCurrentLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <totalEquityAndLiability2 nrg:alignment="right">256405</totalEquityAndLiability2>
+            <floatingCharges nrg:alignment="right">68000</floatingCharges>
+            <propertyMortgage nrg:alignment="right">4000</propertyMortgage>
+            <otherSecurities nrg:alignment="right">0</otherSecurities>
+            <totalSecurities nrg:alignment="right">72000</totalSecurities>
+            <conditionalShareholders nrg:alignment="right">0</conditionalShareholders>
+            <otherContingentLiab nrg:alignment="right">9600</otherContingentLiab>
+            <totalContingentLiab nrg:alignment="right">9600</totalContingentLiab>
+            <noOfEmployees nrg:alignment="right">140</noOfEmployees>
+            <salariesAndEmoluments nrg:alignment="right">2489</salariesAndEmoluments>
+            <bonusToBoardMembers nrg:alignment="right">0</bonusToBoardMembers>
+            <salariesToOthers nrg:alignment="right">25456</salariesToOthers>
+            <incentiveWagesToEmp nrg:alignment="right">0</incentiveWagesToEmp>
+            <socialCosts nrg:alignment="right">12545</socialCosts>
+            <severencePay>J</severencePay>
+            <netInterestIncome nrg:alignment="right">0</netInterestIncome>
+            <currentAccountCredit nrg:alignment="right">58000</currentAccountCredit>
+            <usedAccountCredit nrg:alignment="right">57500</usedAccountCredit>
+            <protocolFromTheGeneral>J</protocolFromTheGeneral>
+            <dividend nrg:alignment="right">4000</dividend>
+            <turnoverPerEmployee nrg:alignment="right">1655</turnoverPerEmployee>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <totalLiability nrg:alignment="right">169347</totalLiability>
+            <totalCapital nrg:alignment="right">256405</totalCapital>
+            <resultBeforeDepreciationPercOfRevenue nrg:alignment="right">15.2</resultBeforeDepreciationPercOfRevenue>
+            <profitLossAfterDepreciationPercOfRevenue nrg:alignment="right">9.7</profitLossAfterDepreciationPercOfRevenue>
+            <profitLossAfterFinancialItemsPercOfRevenue nrg:alignment="right">5.1</profitLossAfterFinancialItemsPercOfRevenue>
+            <profitLossBeforeTaxPercOfRevenue nrg:alignment="right">3.6</profitLossBeforeTaxPercOfRevenue>
+            <netIncomePercOfRevenue nrg:alignment="right">-1.2</netIncomePercOfRevenue>
+            <totalCurrentAssetsPercOfAssets nrg:alignment="right">47.3</totalCurrentAssetsPercOfAssets>
+            <totalLongTermAssetsPercOfAssets nrg:alignment="right">52.7</totalLongTermAssetsPercOfAssets>
+            <totalCurrentLiabilitiesPercOfLiabilities nrg:alignment="right">27.0</totalCurrentLiabilitiesPercOfLiabilities>
+            <longTermLiabilitiesPercOfLiabilities nrg:alignment="right">33.8</longTermLiabilitiesPercOfLiabilities>
+            <untaxedReservesPercOfLiabilities nrg:alignment="right">19.9</untaxedReservesPercOfLiabilities>
+            <shareholdersEquityPercOfLiabilities nrg:alignment="right">19.3</shareholdersEquityPercOfLiabilities>
+         </financialStatementSweden>
+         <financialStatementSweden nrg:segment-code="NB60-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <accountPeriod>201112</accountPeriod>
+            <noOfMonthsCoveredByPl>12</noOfMonthsCoveredByPl>
+            <classificationCode>K</classificationCode>
+            <totalInvoicing nrg:alignment="right">0</totalInvoicing>
+            <netSales nrg:alignment="right">231750</netSales>
+            <changeInInventories nrg:alignment="right">0</changeInInventories>
+            <workPerformForOwnUse nrg:alignment="right">0</workPerformForOwnUse>
+            <otherOperatingIncomeK nrg:alignment="right">0</otherOperatingIncomeK>
+            <totalRenewal nrg:alignment="right">231750</totalRenewal>
+            <costOfGoods nrg:alignment="right">0</costOfGoods>
+            <grossProfitLoss nrg:alignment="right">175301</grossProfitLoss>
+            <sellingExpenses nrg:alignment="right">0</sellingExpenses>
+            <administrativeExpenses nrg:alignment="right">0</administrativeExpenses>
+            <researchAndDevCosts nrg:alignment="right">0</researchAndDevCosts>
+            <itemsAffectingComparability1 nrg:alignment="right">0</itemsAffectingComparability1>
+            <otherOperatingIncomeF nrg:alignment="right">0</otherOperatingIncomeF>
+            <otherOperatingExpenses1 nrg:alignment="right">0</otherOperatingExpenses1>
+            <rawMaterialsAndConsumables nrg:alignment="right">69998</rawMaterialsAndConsumables>
+            <goodsForResale nrg:alignment="right">56449</goodsForResale>
+            <otherExternalCosts nrg:alignment="right">15812</otherExternalCosts>
+            <personnelCosts nrg:alignment="right">36025</personnelCosts>
+            <depreciations nrg:alignment="right">12688</depreciations>
+            <itemsAffectingComparability2 nrg:alignment="right">0</itemsAffectingComparability2>
+            <otherOperatingExpenses2 nrg:alignment="right">18212</otherOperatingExpenses2>
+            <totalOperatingExpenses nrg:alignment="right">209184</totalOperatingExpenses>
+            <ofWhichDepreciations nrg:alignment="right">12688</ofWhichDepreciations>
+            <operatingProfitLoss nrg:alignment="right">22566</operatingProfitLoss>
+            <resultFromParticipation nrg:alignment="right">0</resultFromParticipation>
+            <interestIncomeFromGroup nrg:alignment="right">0</interestIncomeFromGroup>
+            <externalInterestIncome nrg:alignment="right">1121</externalInterestIncome>
+            <otherFinancialIncome nrg:alignment="right">0</otherFinancialIncome>
+            <totalFinancialIncome nrg:alignment="right">1121</totalFinancialIncome>
+            <interestExpenseFromGroup nrg:alignment="right">0</interestExpenseFromGroup>
+            <externalInterestExpenses nrg:alignment="right">6155</externalInterestExpenses>
+            <extraFinCosts nrg:alignment="right">6155</extraFinCosts>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <totalFinancialCosts nrg:alignment="right">8646</totalFinancialCosts>
+            <financialItemsAffecting nrg:alignment="right">-3180</financialItemsAffecting>
+            <profitLossAfter nrg:alignment="right">11861</profitLossAfter>
+            <extraordinaryIncome nrg:alignment="right">0</extraordinaryIncome>
+            <extraExpenses nrg:alignment="right">0</extraExpenses>
+            <totalExtraItems nrg:alignment="right">0</totalExtraItems>
+            <resultBeforeAllocations nrg:alignment="right">11861</resultBeforeAllocations>
+            <groupContribution1 nrg:alignment="right">0</groupContribution1>
+            <shareholdersContribution1 nrg:alignment="right">0</shareholdersContribution1>
+            <appropriations nrg:alignment="right">-3556</appropriations>
+            <profitLossBeforeTax nrg:alignment="right">8305</profitLossBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <minorityShareholding1 nrg:alignment="right">0</minorityShareholding1>
+            <netProfitLossForTheYear1 nrg:alignment="right">-2706</netProfitLossForTheYear1>
+            <subscribedCapitalUnpaid nrg:alignment="right">0</subscribedCapitalUnpaid>
+            <capitalizedExpenditure nrg:alignment="right">0</capitalizedExpenditure>
+            <concessionsEtc nrg:alignment="right">0</concessionsEtc>
+            <goodwill nrg:alignment="right">0</goodwill>
+            <otherIntangibleAssets nrg:alignment="right">16800</otherIntangibleAssets>
+            <totalIntagibleAssets nrg:alignment="right">16800</totalIntagibleAssets>
+            <landAndBuildings nrg:alignment="right">28645</landAndBuildings>
+            <land nrg:alignment="right">0</land>
+            <machinery nrg:alignment="right">0</machinery>
+            <equipment nrg:alignment="right">0</equipment>
+            <totalMachineryAndEquip nrg:alignment="right">40033</totalMachineryAndEquip>
+            <otherTangibleAssetsNon nrg:alignment="right">0</otherTangibleAssetsNon>
+            <otherTangibleAssetsDep nrg:alignment="right">36168</otherTangibleAssetsDep>
+            <totalFixedAssets1 nrg:alignment="right">104846</totalFixedAssets1>
+            <participationInGroup nrg:alignment="right">0</participationInGroup>
+            <receivablesFromGroup1 nrg:alignment="right">0</receivablesFromGroup1>
+            <loansToPartner nrg:alignment="right">0</loansToPartner>
+            <otherFinancialAssets nrg:alignment="right">13383</otherFinancialAssets>
+            <totalFinancialAssets nrg:alignment="right">13383</totalFinancialAssets>
+            <totalFixedAssets2 nrg:alignment="right">104846</totalFixedAssets2>
+            <nonDeprFixedAssets nrg:alignment="right">13383</nonDeprFixedAssets>
+            <workInProgress nrg:alignment="right">0</workInProgress>
+            <otherInventories nrg:alignment="right">48149</otherInventories>
+            <totalInventories nrg:alignment="right">48149</totalInventories>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <receivablesFromGroup2 nrg:alignment="right">0</receivablesFromGroup2>
+            <otherReceivables nrg:alignment="right">19285</otherReceivables>
+            <totalReceivables nrg:alignment="right">66126</totalReceivables>
+            <totalShortTermInvestments nrg:alignment="right">0</totalShortTermInvestments>
+            <cashAndBankBalances nrg:alignment="right">7101</cashAndBankBalances>
+            <otherCurrentAssets nrg:alignment="right">0</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <shareCapital nrg:alignment="right">10000</shareCapital>
+            <sharePremiumReserve nrg:alignment="right">0</sharePremiumReserve>
+            <revaluationReserve nrg:alignment="right">0</revaluationReserve>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <totalRestrictedEquity nrg:alignment="right">20600</totalRestrictedEquity>
+            <profitOrLossBroughtForw nrg:alignment="right">31515</profitOrLossBroughtForw>
+            <groupContribution2 nrg:alignment="right">0</groupContribution2>
+            <shareholdersContribution2 nrg:alignment="right">0</shareholdersContribution2>
+            <netProfitLossForTheYear2 nrg:alignment="right">-2706</netProfitLossForTheYear2>
+            <totalNonRestrictedCapital nrg:alignment="right">28809</totalNonRestrictedCapital>
+            <totalEquityAndLiability1 nrg:alignment="right">49409</totalEquityAndLiability1>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <minorityShareholding2 nrg:alignment="right">0</minorityShareholding2>
+            <totalAllocations nrg:alignment="right">0</totalAllocations>
+            <bondLoans nrg:alignment="right">0</bondLoans>
+            <liaToCreditInstitutions nrg:alignment="right">83519</liaToCreditInstitutions>
+            <liaToGroupCompLong nrg:alignment="right">0</liaToGroupCompLong>
+            <otherLongTermLiabilities nrg:alignment="right">3247</otherLongTermLiabilities>
+            <totalLongTermLiabilities nrg:alignment="right">86766</totalLongTermLiabilities>
+            <liaToCreditInstShort nrg:alignment="right">16213</liaToCreditInstShort>
+            <accountsPayableTrade nrg:alignment="right">36554</accountsPayableTrade>
+            <liaToGroupCompShort nrg:alignment="right">0</liaToGroupCompShort>
+            <otherCurrentLiabilities nrg:alignment="right">16379</otherCurrentLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <totalEquityAndLiability2 nrg:alignment="right">256405</totalEquityAndLiability2>
+            <floatingCharges nrg:alignment="right">68000</floatingCharges>
+            <propertyMortgage nrg:alignment="right">4000</propertyMortgage>
+            <otherSecurities nrg:alignment="right">0</otherSecurities>
+            <totalSecurities nrg:alignment="right">72000</totalSecurities>
+            <conditionalShareholders nrg:alignment="right">0</conditionalShareholders>
+            <otherContingentLiab nrg:alignment="right">9600</otherContingentLiab>
+            <totalContingentLiab nrg:alignment="right">9600</totalContingentLiab>
+            <noOfEmployees nrg:alignment="right">140</noOfEmployees>
+            <salariesAndEmoluments nrg:alignment="right">2489</salariesAndEmoluments>
+            <bonusToBoardMembers nrg:alignment="right">0</bonusToBoardMembers>
+            <salariesToOthers nrg:alignment="right">25456</salariesToOthers>
+            <incentiveWagesToEmp nrg:alignment="right">0</incentiveWagesToEmp>
+            <socialCosts nrg:alignment="right">12545</socialCosts>
+            <severencePay>J</severencePay>
+            <netInterestIncome nrg:alignment="right">0</netInterestIncome>
+            <currentAccountCredit nrg:alignment="right">58000</currentAccountCredit>
+            <usedAccountCredit nrg:alignment="right">57500</usedAccountCredit>
+            <protocolFromTheGeneral>J</protocolFromTheGeneral>
+            <dividend nrg:alignment="right">4000</dividend>
+            <turnoverPerEmployee nrg:alignment="right">1655</turnoverPerEmployee>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <totalLiability nrg:alignment="right">169347</totalLiability>
+            <totalCapital nrg:alignment="right">256405</totalCapital>
+            <resultBeforeDepreciationPercOfRevenue nrg:alignment="right">15.2</resultBeforeDepreciationPercOfRevenue>
+            <profitLossAfterDepreciationPercOfRevenue nrg:alignment="right">9.7</profitLossAfterDepreciationPercOfRevenue>
+            <profitLossAfterFinancialItemsPercOfRevenue nrg:alignment="right">5.1</profitLossAfterFinancialItemsPercOfRevenue>
+            <profitLossBeforeTaxPercOfRevenue nrg:alignment="right">3.6</profitLossBeforeTaxPercOfRevenue>
+            <netIncomePercOfRevenue nrg:alignment="right">-1.2</netIncomePercOfRevenue>
+            <totalCurrentAssetsPercOfAssets nrg:alignment="right">47.3</totalCurrentAssetsPercOfAssets>
+            <totalLongTermAssetsPercOfAssets nrg:alignment="right">52.7</totalLongTermAssetsPercOfAssets>
+            <totalCurrentLiabilitiesPercOfLiabilities nrg:alignment="right">27.0</totalCurrentLiabilitiesPercOfLiabilities>
+            <longTermLiabilitiesPercOfLiabilities nrg:alignment="right">33.8</longTermLiabilitiesPercOfLiabilities>
+            <untaxedReservesPercOfLiabilities nrg:alignment="right">19.9</untaxedReservesPercOfLiabilities>
+            <shareholdersEquityPercOfLiabilities nrg:alignment="right">19.3</shareholdersEquityPercOfLiabilities>
+         </financialStatementSweden>
+         <financialStatementSweden nrg:segment-code="NB60-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <accountPeriod>201012</accountPeriod>
+            <noOfMonthsCoveredByPl>12</noOfMonthsCoveredByPl>
+            <classificationCode>K</classificationCode>
+            <totalInvoicing nrg:alignment="right">0</totalInvoicing>
+            <netSales nrg:alignment="right">231750</netSales>
+            <changeInInventories nrg:alignment="right">0</changeInInventories>
+            <workPerformForOwnUse nrg:alignment="right">0</workPerformForOwnUse>
+            <otherOperatingIncomeK nrg:alignment="right">0</otherOperatingIncomeK>
+            <totalRenewal nrg:alignment="right">231750</totalRenewal>
+            <costOfGoods nrg:alignment="right">0</costOfGoods>
+            <grossProfitLoss nrg:alignment="right">175301</grossProfitLoss>
+            <sellingExpenses nrg:alignment="right">0</sellingExpenses>
+            <administrativeExpenses nrg:alignment="right">0</administrativeExpenses>
+            <researchAndDevCosts nrg:alignment="right">0</researchAndDevCosts>
+            <itemsAffectingComparability1 nrg:alignment="right">0</itemsAffectingComparability1>
+            <otherOperatingIncomeF nrg:alignment="right">0</otherOperatingIncomeF>
+            <otherOperatingExpenses1 nrg:alignment="right">0</otherOperatingExpenses1>
+            <rawMaterialsAndConsumables nrg:alignment="right">69998</rawMaterialsAndConsumables>
+            <goodsForResale nrg:alignment="right">56449</goodsForResale>
+            <otherExternalCosts nrg:alignment="right">15812</otherExternalCosts>
+            <personnelCosts nrg:alignment="right">36025</personnelCosts>
+            <depreciations nrg:alignment="right">12688</depreciations>
+            <itemsAffectingComparability2 nrg:alignment="right">0</itemsAffectingComparability2>
+            <otherOperatingExpenses2 nrg:alignment="right">18212</otherOperatingExpenses2>
+            <totalOperatingExpenses nrg:alignment="right">209184</totalOperatingExpenses>
+            <ofWhichDepreciations nrg:alignment="right">12688</ofWhichDepreciations>
+            <operatingProfitLoss nrg:alignment="right">22566</operatingProfitLoss>
+            <resultFromParticipation nrg:alignment="right">0</resultFromParticipation>
+            <interestIncomeFromGroup nrg:alignment="right">0</interestIncomeFromGroup>
+            <externalInterestIncome nrg:alignment="right">1121</externalInterestIncome>
+            <otherFinancialIncome nrg:alignment="right">0</otherFinancialIncome>
+            <totalFinancialIncome nrg:alignment="right">1121</totalFinancialIncome>
+            <interestExpenseFromGroup nrg:alignment="right">0</interestExpenseFromGroup>
+            <externalInterestExpenses nrg:alignment="right">6155</externalInterestExpenses>
+            <extraFinCosts nrg:alignment="right">6155</extraFinCosts>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <totalFinancialCosts nrg:alignment="right">8646</totalFinancialCosts>
+            <financialItemsAffecting nrg:alignment="right">-3180</financialItemsAffecting>
+            <profitLossAfter nrg:alignment="right">11861</profitLossAfter>
+            <extraordinaryIncome nrg:alignment="right">0</extraordinaryIncome>
+            <extraExpenses nrg:alignment="right">0</extraExpenses>
+            <totalExtraItems nrg:alignment="right">0</totalExtraItems>
+            <resultBeforeAllocations nrg:alignment="right">11861</resultBeforeAllocations>
+            <groupContribution1 nrg:alignment="right">0</groupContribution1>
+            <shareholdersContribution1 nrg:alignment="right">0</shareholdersContribution1>
+            <appropriations nrg:alignment="right">-3556</appropriations>
+            <profitLossBeforeTax nrg:alignment="right">8305</profitLossBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <minorityShareholding1 nrg:alignment="right">0</minorityShareholding1>
+            <netProfitLossForTheYear1 nrg:alignment="right">-2706</netProfitLossForTheYear1>
+            <subscribedCapitalUnpaid nrg:alignment="right">0</subscribedCapitalUnpaid>
+            <capitalizedExpenditure nrg:alignment="right">0</capitalizedExpenditure>
+            <concessionsEtc nrg:alignment="right">0</concessionsEtc>
+            <goodwill nrg:alignment="right">0</goodwill>
+            <otherIntangibleAssets nrg:alignment="right">16800</otherIntangibleAssets>
+            <totalIntagibleAssets nrg:alignment="right">16800</totalIntagibleAssets>
+            <landAndBuildings nrg:alignment="right">28645</landAndBuildings>
+            <land nrg:alignment="right">0</land>
+            <machinery nrg:alignment="right">0</machinery>
+            <equipment nrg:alignment="right">0</equipment>
+            <totalMachineryAndEquip nrg:alignment="right">40033</totalMachineryAndEquip>
+            <otherTangibleAssetsNon nrg:alignment="right">0</otherTangibleAssetsNon>
+            <otherTangibleAssetsDep nrg:alignment="right">36168</otherTangibleAssetsDep>
+            <totalFixedAssets1 nrg:alignment="right">104846</totalFixedAssets1>
+            <participationInGroup nrg:alignment="right">0</participationInGroup>
+            <receivablesFromGroup1 nrg:alignment="right">0</receivablesFromGroup1>
+            <loansToPartner nrg:alignment="right">0</loansToPartner>
+            <otherFinancialAssets nrg:alignment="right">13383</otherFinancialAssets>
+            <totalFinancialAssets nrg:alignment="right">13383</totalFinancialAssets>
+            <totalFixedAssets2 nrg:alignment="right">104846</totalFixedAssets2>
+            <nonDeprFixedAssets nrg:alignment="right">13383</nonDeprFixedAssets>
+            <workInProgress nrg:alignment="right">0</workInProgress>
+            <otherInventories nrg:alignment="right">48149</otherInventories>
+            <totalInventories nrg:alignment="right">48149</totalInventories>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <receivablesFromGroup2 nrg:alignment="right">0</receivablesFromGroup2>
+            <otherReceivables nrg:alignment="right">19285</otherReceivables>
+            <totalReceivables nrg:alignment="right">66126</totalReceivables>
+            <totalShortTermInvestments nrg:alignment="right">0</totalShortTermInvestments>
+            <cashAndBankBalances nrg:alignment="right">7101</cashAndBankBalances>
+            <otherCurrentAssets nrg:alignment="right">0</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <shareCapital nrg:alignment="right">10000</shareCapital>
+            <sharePremiumReserve nrg:alignment="right">0</sharePremiumReserve>
+            <revaluationReserve nrg:alignment="right">0</revaluationReserve>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <totalRestrictedEquity nrg:alignment="right">20600</totalRestrictedEquity>
+            <profitOrLossBroughtForw nrg:alignment="right">31515</profitOrLossBroughtForw>
+            <groupContribution2 nrg:alignment="right">0</groupContribution2>
+            <shareholdersContribution2 nrg:alignment="right">0</shareholdersContribution2>
+            <netProfitLossForTheYear2 nrg:alignment="right">-2706</netProfitLossForTheYear2>
+            <totalNonRestrictedCapital nrg:alignment="right">28809</totalNonRestrictedCapital>
+            <totalEquityAndLiability1 nrg:alignment="right">49409</totalEquityAndLiability1>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <minorityShareholding2 nrg:alignment="right">0</minorityShareholding2>
+            <totalAllocations nrg:alignment="right">0</totalAllocations>
+            <bondLoans nrg:alignment="right">0</bondLoans>
+            <liaToCreditInstitutions nrg:alignment="right">83519</liaToCreditInstitutions>
+            <liaToGroupCompLong nrg:alignment="right">0</liaToGroupCompLong>
+            <otherLongTermLiabilities nrg:alignment="right">3247</otherLongTermLiabilities>
+            <totalLongTermLiabilities nrg:alignment="right">86766</totalLongTermLiabilities>
+            <liaToCreditInstShort nrg:alignment="right">16213</liaToCreditInstShort>
+            <accountsPayableTrade nrg:alignment="right">36554</accountsPayableTrade>
+            <liaToGroupCompShort nrg:alignment="right">0</liaToGroupCompShort>
+            <otherCurrentLiabilities nrg:alignment="right">16379</otherCurrentLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <totalEquityAndLiability2 nrg:alignment="right">256405</totalEquityAndLiability2>
+            <floatingCharges nrg:alignment="right">68000</floatingCharges>
+            <propertyMortgage nrg:alignment="right">4000</propertyMortgage>
+            <otherSecurities nrg:alignment="right">0</otherSecurities>
+            <totalSecurities nrg:alignment="right">72000</totalSecurities>
+            <conditionalShareholders nrg:alignment="right">0</conditionalShareholders>
+            <otherContingentLiab nrg:alignment="right">9600</otherContingentLiab>
+            <totalContingentLiab nrg:alignment="right">9600</totalContingentLiab>
+            <noOfEmployees nrg:alignment="right">140</noOfEmployees>
+            <salariesAndEmoluments nrg:alignment="right">2489</salariesAndEmoluments>
+            <bonusToBoardMembers nrg:alignment="right">0</bonusToBoardMembers>
+            <salariesToOthers nrg:alignment="right">25456</salariesToOthers>
+            <incentiveWagesToEmp nrg:alignment="right">0</incentiveWagesToEmp>
+            <socialCosts nrg:alignment="right">12545</socialCosts>
+            <severencePay>J</severencePay>
+            <netInterestIncome nrg:alignment="right">0</netInterestIncome>
+            <currentAccountCredit nrg:alignment="right">58000</currentAccountCredit>
+            <usedAccountCredit nrg:alignment="right">57500</usedAccountCredit>
+            <protocolFromTheGeneral>J</protocolFromTheGeneral>
+            <dividend nrg:alignment="right">4000</dividend>
+            <turnoverPerEmployee nrg:alignment="right">1655</turnoverPerEmployee>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <totalLiability nrg:alignment="right">169347</totalLiability>
+            <totalCapital nrg:alignment="right">256405</totalCapital>
+            <resultBeforeDepreciationPercOfRevenue nrg:alignment="right">15.2</resultBeforeDepreciationPercOfRevenue>
+            <profitLossAfterDepreciationPercOfRevenue nrg:alignment="right">9.7</profitLossAfterDepreciationPercOfRevenue>
+            <profitLossAfterFinancialItemsPercOfRevenue nrg:alignment="right">5.1</profitLossAfterFinancialItemsPercOfRevenue>
+            <profitLossBeforeTaxPercOfRevenue nrg:alignment="right">3.6</profitLossBeforeTaxPercOfRevenue>
+            <netIncomePercOfRevenue nrg:alignment="right">-1.2</netIncomePercOfRevenue>
+            <totalCurrentAssetsPercOfAssets nrg:alignment="right">47.3</totalCurrentAssetsPercOfAssets>
+            <totalLongTermAssetsPercOfAssets nrg:alignment="right">52.7</totalLongTermAssetsPercOfAssets>
+            <totalCurrentLiabilitiesPercOfLiabilities nrg:alignment="right">27.0</totalCurrentLiabilitiesPercOfLiabilities>
+            <longTermLiabilitiesPercOfLiabilities nrg:alignment="right">33.8</longTermLiabilitiesPercOfLiabilities>
+            <untaxedReservesPercOfLiabilities nrg:alignment="right">19.9</untaxedReservesPercOfLiabilities>
+            <shareholdersEquityPercOfLiabilities nrg:alignment="right">19.3</shareholdersEquityPercOfLiabilities>
+         </financialStatementSweden>
+         <financialStatementSweden nrg:segment-code="NB60-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <accountPeriod>200912</accountPeriod>
+            <noOfMonthsCoveredByPl>12</noOfMonthsCoveredByPl>
+            <classificationCode>K</classificationCode>
+            <totalInvoicing nrg:alignment="right">0</totalInvoicing>
+            <netSales nrg:alignment="right">231750</netSales>
+            <changeInInventories nrg:alignment="right">0</changeInInventories>
+            <workPerformForOwnUse nrg:alignment="right">0</workPerformForOwnUse>
+            <otherOperatingIncomeK nrg:alignment="right">0</otherOperatingIncomeK>
+            <totalRenewal nrg:alignment="right">231750</totalRenewal>
+            <costOfGoods nrg:alignment="right">0</costOfGoods>
+            <grossProfitLoss nrg:alignment="right">175301</grossProfitLoss>
+            <sellingExpenses nrg:alignment="right">0</sellingExpenses>
+            <administrativeExpenses nrg:alignment="right">0</administrativeExpenses>
+            <researchAndDevCosts nrg:alignment="right">0</researchAndDevCosts>
+            <itemsAffectingComparability1 nrg:alignment="right">0</itemsAffectingComparability1>
+            <otherOperatingIncomeF nrg:alignment="right">0</otherOperatingIncomeF>
+            <otherOperatingExpenses1 nrg:alignment="right">0</otherOperatingExpenses1>
+            <rawMaterialsAndConsumables nrg:alignment="right">69998</rawMaterialsAndConsumables>
+            <goodsForResale nrg:alignment="right">56449</goodsForResale>
+            <otherExternalCosts nrg:alignment="right">15812</otherExternalCosts>
+            <personnelCosts nrg:alignment="right">36025</personnelCosts>
+            <depreciations nrg:alignment="right">12688</depreciations>
+            <itemsAffectingComparability2 nrg:alignment="right">0</itemsAffectingComparability2>
+            <otherOperatingExpenses2 nrg:alignment="right">18212</otherOperatingExpenses2>
+            <totalOperatingExpenses nrg:alignment="right">209184</totalOperatingExpenses>
+            <ofWhichDepreciations nrg:alignment="right">12688</ofWhichDepreciations>
+            <operatingProfitLoss nrg:alignment="right">22566</operatingProfitLoss>
+            <resultFromParticipation nrg:alignment="right">0</resultFromParticipation>
+            <interestIncomeFromGroup nrg:alignment="right">0</interestIncomeFromGroup>
+            <externalInterestIncome nrg:alignment="right">1121</externalInterestIncome>
+            <otherFinancialIncome nrg:alignment="right">0</otherFinancialIncome>
+            <totalFinancialIncome nrg:alignment="right">1121</totalFinancialIncome>
+            <interestExpenseFromGroup nrg:alignment="right">0</interestExpenseFromGroup>
+            <externalInterestExpenses nrg:alignment="right">6155</externalInterestExpenses>
+            <extraFinCosts nrg:alignment="right">6155</extraFinCosts>
+            <otherFinancialExp nrg:alignment="right">5671</otherFinancialExp>
+            <totalFinancialCosts nrg:alignment="right">8646</totalFinancialCosts>
+            <financialItemsAffecting nrg:alignment="right">-3180</financialItemsAffecting>
+            <profitLossAfter nrg:alignment="right">11861</profitLossAfter>
+            <extraordinaryIncome nrg:alignment="right">0</extraordinaryIncome>
+            <extraExpenses nrg:alignment="right">0</extraExpenses>
+            <totalExtraItems nrg:alignment="right">0</totalExtraItems>
+            <resultBeforeAllocations nrg:alignment="right">11861</resultBeforeAllocations>
+            <groupContribution1 nrg:alignment="right">0</groupContribution1>
+            <shareholdersContribution1 nrg:alignment="right">0</shareholdersContribution1>
+            <appropriations nrg:alignment="right">-3556</appropriations>
+            <profitLossBeforeTax nrg:alignment="right">8305</profitLossBeforeTax>
+            <tax nrg:alignment="right">11011</tax>
+            <minorityShareholding1 nrg:alignment="right">0</minorityShareholding1>
+            <netProfitLossForTheYear1 nrg:alignment="right">-2706</netProfitLossForTheYear1>
+            <subscribedCapitalUnpaid nrg:alignment="right">0</subscribedCapitalUnpaid>
+            <capitalizedExpenditure nrg:alignment="right">0</capitalizedExpenditure>
+            <concessionsEtc nrg:alignment="right">0</concessionsEtc>
+            <goodwill nrg:alignment="right">0</goodwill>
+            <otherIntangibleAssets nrg:alignment="right">16800</otherIntangibleAssets>
+            <totalIntagibleAssets nrg:alignment="right">16800</totalIntagibleAssets>
+            <landAndBuildings nrg:alignment="right">28645</landAndBuildings>
+            <land nrg:alignment="right">0</land>
+            <machinery nrg:alignment="right">0</machinery>
+            <equipment nrg:alignment="right">0</equipment>
+            <totalMachineryAndEquip nrg:alignment="right">40033</totalMachineryAndEquip>
+            <otherTangibleAssetsNon nrg:alignment="right">0</otherTangibleAssetsNon>
+            <otherTangibleAssetsDep nrg:alignment="right">36168</otherTangibleAssetsDep>
+            <totalFixedAssets1 nrg:alignment="right">104846</totalFixedAssets1>
+            <participationInGroup nrg:alignment="right">0</participationInGroup>
+            <receivablesFromGroup1 nrg:alignment="right">0</receivablesFromGroup1>
+            <loansToPartner nrg:alignment="right">0</loansToPartner>
+            <otherFinancialAssets nrg:alignment="right">13383</otherFinancialAssets>
+            <totalFinancialAssets nrg:alignment="right">13383</totalFinancialAssets>
+            <totalFixedAssets2 nrg:alignment="right">104846</totalFixedAssets2>
+            <nonDeprFixedAssets nrg:alignment="right">13383</nonDeprFixedAssets>
+            <workInProgress nrg:alignment="right">0</workInProgress>
+            <otherInventories nrg:alignment="right">48149</otherInventories>
+            <totalInventories nrg:alignment="right">48149</totalInventories>
+            <accountsReceivables nrg:alignment="right">46841</accountsReceivables>
+            <receivablesFromGroup2 nrg:alignment="right">0</receivablesFromGroup2>
+            <otherReceivables nrg:alignment="right">19285</otherReceivables>
+            <totalReceivables nrg:alignment="right">66126</totalReceivables>
+            <totalShortTermInvestments nrg:alignment="right">0</totalShortTermInvestments>
+            <cashAndBankBalances nrg:alignment="right">7101</cashAndBankBalances>
+            <otherCurrentAssets nrg:alignment="right">0</otherCurrentAssets>
+            <totalCurrentAssets nrg:alignment="right">121376</totalCurrentAssets>
+            <totalAssets nrg:alignment="right">256405</totalAssets>
+            <shareCapital nrg:alignment="right">10000</shareCapital>
+            <sharePremiumReserve nrg:alignment="right">0</sharePremiumReserve>
+            <revaluationReserve nrg:alignment="right">0</revaluationReserve>
+            <otherRestrictedEquity nrg:alignment="right">10600</otherRestrictedEquity>
+            <totalRestrictedEquity nrg:alignment="right">20600</totalRestrictedEquity>
+            <profitOrLossBroughtForw nrg:alignment="right">31515</profitOrLossBroughtForw>
+            <groupContribution2 nrg:alignment="right">0</groupContribution2>
+            <shareholdersContribution2 nrg:alignment="right">0</shareholdersContribution2>
+            <netProfitLossForTheYear2 nrg:alignment="right">-2706</netProfitLossForTheYear2>
+            <totalNonRestrictedCapital nrg:alignment="right">28809</totalNonRestrictedCapital>
+            <totalEquityAndLiability1 nrg:alignment="right">49409</totalEquityAndLiability1>
+            <untaxedReserves nrg:alignment="right">51084</untaxedReserves>
+            <minorityShareholding2 nrg:alignment="right">0</minorityShareholding2>
+            <totalAllocations nrg:alignment="right">0</totalAllocations>
+            <bondLoans nrg:alignment="right">0</bondLoans>
+            <liaToCreditInstitutions nrg:alignment="right">83519</liaToCreditInstitutions>
+            <liaToGroupCompLong nrg:alignment="right">0</liaToGroupCompLong>
+            <otherLongTermLiabilities nrg:alignment="right">3247</otherLongTermLiabilities>
+            <totalLongTermLiabilities nrg:alignment="right">86766</totalLongTermLiabilities>
+            <liaToCreditInstShort nrg:alignment="right">16213</liaToCreditInstShort>
+            <accountsPayableTrade nrg:alignment="right">36554</accountsPayableTrade>
+            <liaToGroupCompShort nrg:alignment="right">0</liaToGroupCompShort>
+            <otherCurrentLiabilities nrg:alignment="right">16379</otherCurrentLiabilities>
+            <totalCurrentLiab nrg:alignment="right">69146</totalCurrentLiab>
+            <totalEquityAndLiability2 nrg:alignment="right">256405</totalEquityAndLiability2>
+            <floatingCharges nrg:alignment="right">68000</floatingCharges>
+            <propertyMortgage nrg:alignment="right">4000</propertyMortgage>
+            <otherSecurities nrg:alignment="right">0</otherSecurities>
+            <totalSecurities nrg:alignment="right">72000</totalSecurities>
+            <conditionalShareholders nrg:alignment="right">0</conditionalShareholders>
+            <otherContingentLiab nrg:alignment="right">9600</otherContingentLiab>
+            <totalContingentLiab nrg:alignment="right">9600</totalContingentLiab>
+            <noOfEmployees nrg:alignment="right">140</noOfEmployees>
+            <salariesAndEmoluments nrg:alignment="right">2489</salariesAndEmoluments>
+            <bonusToBoardMembers nrg:alignment="right">0</bonusToBoardMembers>
+            <salariesToOthers nrg:alignment="right">25456</salariesToOthers>
+            <incentiveWagesToEmp nrg:alignment="right">0</incentiveWagesToEmp>
+            <socialCosts nrg:alignment="right">12545</socialCosts>
+            <severencePay>J</severencePay>
+            <netInterestIncome nrg:alignment="right">0</netInterestIncome>
+            <currentAccountCredit nrg:alignment="right">58000</currentAccountCredit>
+            <usedAccountCredit nrg:alignment="right">57500</usedAccountCredit>
+            <protocolFromTheGeneral>J</protocolFromTheGeneral>
+            <dividend nrg:alignment="right">4000</dividend>
+            <turnoverPerEmployee nrg:alignment="right">1655</turnoverPerEmployee>
+            <netWorth nrg:alignment="right">87057</netWorth>
+            <totalLiability nrg:alignment="right">169347</totalLiability>
+            <totalCapital nrg:alignment="right">256405</totalCapital>
+            <resultBeforeDepreciationPercOfRevenue nrg:alignment="right">15.2</resultBeforeDepreciationPercOfRevenue>
+            <profitLossAfterDepreciationPercOfRevenue nrg:alignment="right">9.7</profitLossAfterDepreciationPercOfRevenue>
+            <profitLossAfterFinancialItemsPercOfRevenue nrg:alignment="right">5.1</profitLossAfterFinancialItemsPercOfRevenue>
+            <profitLossBeforeTaxPercOfRevenue nrg:alignment="right">3.6</profitLossBeforeTaxPercOfRevenue>
+            <netIncomePercOfRevenue nrg:alignment="right">-1.2</netIncomePercOfRevenue>
+            <totalCurrentAssetsPercOfAssets nrg:alignment="right">47.3</totalCurrentAssetsPercOfAssets>
+            <totalLongTermAssetsPercOfAssets nrg:alignment="right">52.7</totalLongTermAssetsPercOfAssets>
+            <totalCurrentLiabilitiesPercOfLiabilities nrg:alignment="right">27.0</totalCurrentLiabilitiesPercOfLiabilities>
+            <longTermLiabilitiesPercOfLiabilities nrg:alignment="right">33.8</longTermLiabilitiesPercOfLiabilities>
+            <untaxedReservesPercOfLiabilities nrg:alignment="right">19.9</untaxedReservesPercOfLiabilities>
+            <shareholdersEquityPercOfLiabilities nrg:alignment="right">19.3</shareholdersEquityPercOfLiabilities>
+         </financialStatementSweden>
+         <generalCompanyData nrg:segment-code="NB30-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <companyName>AB Skuldman &amp; Son</companyName>
+            <postalAddress>Box 1396</postalAddress>
+            <postCode>17127</postCode>
+            <town>Solna</town>
+            <telNumber>020  654322</telNumber>
+            <visitingAdress>Sturegatan 3</visitingAdress>
+            <postCodeOfVisitAdress>17231</postCodeOfVisitAdress>
+            <townOfVisitingAdress>Sundbyberg</townOfVisitingAdress>
+            <dunsNumber>00354394793</dunsNumber>
+            <countryRegNumber>05561234567</countryRegNumber>
+            <ratingCode>AAA</ratingCode>
+            <countryRegNoAtMerger>00000000000</countryRegNoAtMerger>
+            <parentsRegNoAtSpecialEvent>00000000000</parentsRegNoAtSpecialEvent>
+            <limitInLocalCurrency>000000006952</limitInLocalCurrency>
+            <historyCode>AGE010</historyCode>
+            <shareholdersCode>OWN030</shareholdersCode>
+            <financeCode>ECO020</financeCode>
+            <abilityToPay1>PAY010</abilityToPay1>
+            <legalForm>AB</legalForm>
+            <dateReg>19561101</dateReg>
+            <placeOfRegistrationMunDesc>Solna kommun</placeOfRegistrationMunDesc>
+            <currentNameReg>19930817</currentNameReg>
+            <previousName>Bjure AB</previousName>
+            <shareCapital>00003000000</shareCapital>
+            <noOfEmployees1>06</noOfEmployees1>
+            <lineOfBusinessC1>022</lineOfBusinessC1>
+            <noOfSubsidaries>00000</noOfSubsidaries>
+            <boardDateReg>19930818</boardDateReg>
+            <payRemarkNo>000</payRemarkNo>
+            <noOfPetitions>000</noOfPetitions>
+            <noOfRealEstate>00000</noOfRealEstate>
+            <realEstateTaxValue>00000000000</realEstateTaxValue>
+            <realEstateOwnerShipOfToTax>00000000000</realEstateOwnerShipOfToTax>
+            <chattelMortgage>00000015000</chattelMortgage>
+            <claimsOnBankrupt>00000000000</claimsOnBankrupt>
+            <historyOperation>Well-established</historyOperation>
+            <shareholderDesc>Satisfactory</shareholderDesc>
+            <financeDesc>Good</financeDesc>
+            <abilityToPay2>Very good</abilityToPay2>
+            <ratingCodeDesc>Highest credit worthiness</ratingCodeDesc>
+            <noOfEmpDesc>100-199</noOfEmpDesc>
+            <lineOfBusinessDesc1>Logging</lineOfBusinessDesc1>
+            <legalFormDesc>Limited company</legalFormDesc>
+            <realEstateDateInf>20140101</realEstateDateInf>
+            <noticeOfTaxCode>2</noticeOfTaxCode>
+            <noticeOfTaxData>19950210</noticeOfTaxData>
+            <officialFormCode>49</officialFormCode>
+            <officialFormDesc>Limited company</officialFormDesc>
+            <placeOfRegistrationMunCode>0184</placeOfRegistrationMunCode>
+            <reserve>0000000000000000000000</reserve>
+            <dateOfRating>20140201</dateOfRating>
+            <noOfEnquiries>000</noOfEnquiries>
+            <currentEventTextAvailable>N</currentEventTextAvailable>
+            <activeInVat>Y</activeInVat>
+            <registeredInTheVatList>Y</registeredInTheVatList>
+            <registeredAsEmployer>Y</registeredAsEmployer>
+            <percentageOfSharesHeldByParent>00000</percentageOfSharesHeldByParent>
+            <companyRegStatusCode>4</companyRegStatusCode>
+            <companyRegStatusDate>20000512</companyRegStatusDate>
+            <companyStatusCode>1</companyStatusCode>
+            <companyStatusDate>20061016</companyStatusDate>
+            <activeInVatStatusDate>19950210</activeInVatStatusDate>
+            <registeredInTheVatListStatusDate>19950210</registeredInTheVatListStatusDate>
+            <registeredAsEmployerStatusDate>20010214</registeredAsEmployerStatusDate>
+            <auditorDeselectedAdded>0</auditorDeselectedAdded>
+            <realEstatePercentalOwnerShipOfTotTax>000</realEstatePercentalOwnerShipOfTotTax>
+         </generalCompanyData>
+         <historicalRating nrg:segment-code="NB31-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20140201</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000006952</historicalCreditLimit>
+            <dateOfAnnualReport>201312</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20131113</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000006952</historicalCreditLimit>
+            <dateOfAnnualReport>201212</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20130127</dateOfHistoricalRating>
+            <historicalRating>C</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>201012</dateOfAnnualReport>
+            <historicalRatingDesc>Credit rejected</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-0</historicalCreditLimitCode>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-3" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20120302</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>201012</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-4" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20120119</dateOfHistoricalRating>
+            <historicalRating>C</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>200912</dateOfAnnualReport>
+            <historicalRatingDesc>Credit rejected</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-0</historicalCreditLimitCode>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-5" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20111209</dateOfHistoricalRating>
+            <historicalRating>B</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>200912</dateOfAnnualReport>
+            <historicalRatingDesc>Credit against security</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-0</historicalCreditLimitCode>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-6" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20100922</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200912</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-7" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20090305</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200812</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-8" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20081106</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200712</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-9" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20071115</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200612</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-10" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20061030</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200512</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-5</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>5 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-11" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20051205</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200412</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-5</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>5 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-12" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20051125</dateOfHistoricalRating>
+            <historicalRating>-</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>200412</dateOfAnnualReport>
+            <historicalRatingDesc>Rating not determined</historicalRatingDesc>
+            <expRatingNoteEstCode>AKTHAND</expRatingNoteEstCode>
+            <expRatingNotEstDesc>Current neg event in the company</expRatingNotEstDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-13" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20050908</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200412</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-5</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>5 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-14" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20050819</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200312</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-5</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>5 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-15" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20041023</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200312</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-5</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>5 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-16" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20031114</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200212</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-17" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20020715</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200112</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-18" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20020115</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200012</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-19" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20011030</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>200012</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-2</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>2 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-20" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>20001010</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199912</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-21" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19991210</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199812</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-22" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19990121</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199712</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-23" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19970930</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199612</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-24" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19960319</dateOfHistoricalRating>
+            <historicalRating>AAA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199512</dateOfAnnualReport>
+            <historicalRatingDesc>Highest credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-3</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>3 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-25" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19951121</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199412</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-2</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>2 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-26" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19950620</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199312</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-2</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>2 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-27" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19950619</dateOfHistoricalRating>
+            <historicalRating>-</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>000000</dateOfAnnualReport>
+            <historicalRatingDesc>Rating not determined</historicalRatingDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-28" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19941004</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000999</historicalCreditLimit>
+            <dateOfAnnualReport>199312</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-2</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>2 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-29" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19930224</dateOfHistoricalRating>
+            <historicalRating>B</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>199212</dateOfAnnualReport>
+            <historicalRatingDesc>Credit against security</historicalRatingDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-30" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19930203</dateOfHistoricalRating>
+            <historicalRating>B</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>199112</dateOfAnnualReport>
+            <historicalRatingDesc>Credit against security</historicalRatingDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-31" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19921109</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>199112</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-32" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19920521</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>199112</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <historicalRating nrg:segment-code="NB31-33" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <dateOfHistoricalRating>19920103</dateOfHistoricalRating>
+            <historicalRating>AA</historicalRating>
+            <historicalCreditLimit>000000000000</historicalCreditLimit>
+            <dateOfAnnualReport>199012</dateOfAnnualReport>
+            <historicalRatingDesc>Good credit worthiness</historicalRatingDesc>
+            <historicalCreditLimitCode>LIM-4</historicalCreditLimitCode>
+            <historicalCreditLimitDesc>4 % of operating income</historicalCreditLimitDesc>
+         </historicalRating>
+         <industryKeyFigures nrg:segment-code="NB3V-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <bAACompWithNaceCode>02</bAACompWithNaceCode>
+            <bAAOrderOfSize>05</bAAOrderOfSize>
+            <bAAQuickRatio nrg:alignment="right">123.0</bAAQuickRatio>
+            <bAACurrentRatio nrg:alignment="right">143.3</bAACurrentRatio>
+            <bAAEquityRatio nrg:alignment="right">33.6</bAAEquityRatio>
+            <bAAProfitMargin nrg:alignment="right">3.8</bAAProfitMargin>
+            <bAAReturnOnTotalAssets nrg:alignment="right">9.9</bAAReturnOnTotalAssets>
+            <bAAReturnOnEquity nrg:alignment="right">15.9</bAAReturnOnEquity>
+            <bAAInterestOnLiabilities nrg:alignment="right">2.7</bAAInterestOnLiabilities>
+            <bAARiskMargin nrg:alignment="right">6.5</bAARiskMargin>
+            <bAALiabilityRatio nrg:alignment="right">2.0</bAALiabilityRatio>
+            <bAAInterestCover nrg:alignment="right">0.0</bAAInterestCover>
+            <bAATurnoverAssets nrg:alignment="right">2.3</bAATurnoverAssets>
+            <bAATurnoverPerEmp nrg:alignment="right">720.5</bAATurnoverPerEmp>
+            <bAALabourCostsTurnover nrg:alignment="right">49.3</bAALabourCostsTurnover>
+            <bAADeprecDeprecAssets nrg:alignment="right">22.1</bAADeprecDeprecAssets>
+            <bAANetWorth nrg:alignment="right">8331.0</bAANetWorth>
+            <bAACashFlowFinancialExp nrg:alignment="right">0.0</bAACashFlowFinancialExp>
+            <bAACashFlowLiabilities nrg:alignment="right">20.8</bAACashFlowLiabilities>
+            <bAATransferOtherEquity nrg:alignment="right">6.0</bAATransferOtherEquity>
+            <bAAChangeOfTurnover nrg:alignment="right">-2.8</bAAChangeOfTurnover>
+            <bAAChangeOfTotCapital nrg:alignment="right">4.1</bAAChangeOfTotCapital>
+            <bAACurrentLibilitiesTurnover nrg:alignment="right">17.2</bAACurrentLibilitiesTurnover>
+            <bAATotalEquityAssets nrg:alignment="right">37.3</bAATotalEquityAssets>
+            <bAAAccountsReceivableTurnover nrg:alignment="right">8.4</bAAAccountsReceivableTurnover>
+            <bAALiquiedAssetsTurnover nrg:alignment="right">3.8</bAALiquiedAssetsTurnover>
+            <bAAResultAfterFinItemsTurnover nrg:alignment="right">3.5</bAAResultAfterFinItemsTurnover>
+            <bAAAssetsPledgedLiabilities nrg:alignment="right">56.2</bAAAssetsPledgedLiabilities>
+            <bAAIncomeBeforeAllocations nrg:alignment="right">1454.0</bAAIncomeBeforeAllocations>
+            <bAAResultAfterFinItems nrg:alignment="right">1454.0</bAAResultAfterFinItems>
+            <bAAWorkingCapitalTurnover nrg:alignment="right">6.9</bAAWorkingCapitalTurnover>
+            <bAAOperatingProfitTurnover nrg:alignment="right">5.1</bAAOperatingProfitTurnover>
+            <bAATotalCapital nrg:alignment="right">27483.0</bAATotalCapital>
+            <bAATotalLiabilities nrg:alignment="right">15952.5</bAATotalLiabilities>
+            <bAAInventoriesTurnover nrg:alignment="right">0.6</bAAInventoriesTurnover>
+         </industryKeyFigures>
+         <signature1 nrg:segment-code="NB3J-0" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <signature>Firman tecknas förutom av styrelsen av Per Skuldman</signature>
+         </signature1>
+         <signature1 nrg:segment-code="NB3J-1" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <signature>Dessutom har verkställande direktören rätt att teckna firman</signature>
+         </signature1>
+         <signature1 nrg:segment-code="NB3J-2" xmlns:nrg="http://www.dnbnordic.com/nrg">
+            <signature>beträffande löpande förvaltningsåtgärder</signature>
+         </signature1>
+      </nRGCompanyReportStandardResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
