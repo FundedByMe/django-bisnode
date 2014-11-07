@@ -39,19 +39,18 @@ class BisnodeCompanyReport(models.Model):
         rating_report = get_bisnode_company_report(
             report_type=COMPANY_RATING_REPORT,
             organization_number=organization_number)
-        company_data = rating_report.generalCompanyData[0]
-        self._update_general_company_data(company_data)
+        self._update_general_company_data(rating_report)
         self.save()
 
     def create_standard_report(self, organization_number):
         standard_report = get_bisnode_company_report(
             report_type=COMPANY_STANDARD_REPORT,
             organization_number=organization_number)
-        company_data = standard_report.generalCompanyData[0]
-        self._update_general_company_data(company_data)
+        self._update_general_company_data(standard_report)
         self.save()
 
-    def _update_general_company_data(self, company_data):
+    def _update_general_company_data(self, report):
+        company_data = report.generalCompanyData[0]
         self.rating = company_data.ratingCode
         self.date_of_rating = bisnode_date_to_date(company_data.dateOfRating)
         self.registration_date = bisnode_date_to_date(company_data.dateReg)
