@@ -20,6 +20,7 @@ class BisnodeCompanyReport(models.Model):
     last_updated = models.DateTimeField(auto_now=True)
 
     # General Company Data
+    company_name = models.CharField(max_length=100, blank=True)
     rating = models.CharField(max_length=3, choices=RATING_CHOICES, blank=True)
     date_of_rating = models.DateField(blank=True, null=True)
     registration_date = models.DateField(blank=True, null=True)
@@ -51,6 +52,7 @@ class BisnodeCompanyReport(models.Model):
 
     def _update_general_company_data(self, report):
         company_data = report.generalCompanyData[0]
+        self.company_name = company_data.companyName
         self.rating = company_data.ratingCode
         self.date_of_rating = bisnode_date_to_date(company_data.dateOfRating)
         self.registration_date = bisnode_date_to_date(company_data.dateReg)

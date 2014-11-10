@@ -8,6 +8,7 @@ from ..models import BisnodeCompanyReport
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
     FACTORY_FOR = BisnodeCompanyReport
 
+    company_name = ''
     rating = ''
     date_of_rating = None
     registration_date = None

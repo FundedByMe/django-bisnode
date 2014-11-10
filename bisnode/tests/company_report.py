@@ -21,6 +21,7 @@ class BisnodeCompanyReportTests(TestCase):
         self.share_capital = Money(3000000.00, 'SEK')
 
     def assert_general_company_data_does_not_exist(self):
+        self.assertEqual(self.company_report.company_name, '')
         self.assertEqual(self.company_report.rating, '')
         self.assertEqual(self.company_report.finances, '')
         self.assertEqual(self.company_report.share_capital, Money(0, 'SEK'))
@@ -29,11 +30,13 @@ class BisnodeCompanyReportTests(TestCase):
     def assert_general_company_data_saved_successfully(self):
         self.company_report = BisnodeCompanyReport.objects.get(
             id=self.company_report.id)
+        self.assertEqual(self.company_report.company_name, 'AB Skuldman & Son')
         self.assertEquals(self.company_report.rating, HIGH)
         self.assertEquals(self.company_report.finances, GOOD_FINANCES)
         self.assertEquals(self.company_report.number_of_employees,
                           self.number_of_employees)
-        self.assertEquals(self.company_report.share_capital, self.share_capital)
+        self.assertEquals(self.company_report.share_capital,
+                          self.share_capital)
 
     @patch("bisnode.models.get_bisnode_company_report")
     def test_create_rating_report_with_incorrect_input(self, mock_get_report):
