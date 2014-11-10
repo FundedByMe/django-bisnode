@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soapenv:Header>
+</soapenv:Header>
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>Error in NRG Transaction; NRG error code: 532; NRG error message: NOT VALID COMPANY</faultstring>
+         <detail xmlns:faults="http://www.dnbnordic.com/brg/faults">
+            <faults:errorCode>100</faults:errorCode>
+            <faults:exception>com.mogul.dnb.brg.server.service.exception.LoggableXmlMessageException</faults:exception>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>
