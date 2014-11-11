@@ -6,7 +6,8 @@ from money.contrib.django.models.fields import MoneyField
 
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
-                        FINANCES_CHOICES, SOLVENCY_CHOICES)
+                        FINANCES_CHOICES, SOLVENCY_CHOICES,
+                        BOARD_MEMBERS_FUNCTION_CHOICES)
 from .bisnode import get_bisnode_company_report
 
 
@@ -42,13 +43,16 @@ class BisnodeCompanyReport(models.Model):
             organization_number=organization_number)
         self._update_general_company_data(rating_report)
         self.save()
+        return self
 
     def create_standard_report(self, organization_number):
         standard_report = get_bisnode_company_report(
             report_type=COMPANY_STANDARD_REPORT,
             organization_number=organization_number)
         self._update_general_company_data(standard_report)
+        self._update_board_members_data(standard_report)
         self.save()
+        return self
 
     def _update_general_company_data(self, report):
         company_data = report.generalCompanyData[0]
@@ -62,3 +66,33 @@ class BisnodeCompanyReport(models.Model):
         self.solvency = company_data.abilityToPay1
         self.number_of_employees = company_data.noOfEmployees1
         self.share_capital.amount = float(company_data.shareCapital)
+
+    def _update_board_members_data(self, report):
+        today = datetime.now()
+        BisnodeBoardMemberReport.create_board_members_reports(self.id, report)
+        self.board_members.filter(created__lt=today).delete()
+
+
+class BisnodeBoardMemberReport(models.Model):
+
+    created = models.DateTimeField(auto_now_add=True)
+    company_report = models.ForeignKey(BisnodeCompanyReport,
+                                       related_name="board_members")
+    name = models.CharField(max_length=60)
+    function = models.CharField(max_length=2, blank=True,
+                                choices=BOARD_MEMBERS_FUNCTION_CHOICES)
+    member_since = models.DateField(blank=True, null=True)
+
+    @classmethod
+    def create_board_members_reports(cls, company_report_id, report):
+        [cls().create(company_report_id, board_member)
+         for board_member in report.boardMembers]
+
+    def create(self, company_report_id, board_member):
+        self.company_report_id = company_report_id
+        self.name = board_member.principalName
+        self.function = board_member.principalFunction
+        member_since = getattr(board_member, 'dateOfPrincipalApp', None)
+        if member_since:
+            self.member_since = bisnode_date_to_date(member_since)
+        self.save()

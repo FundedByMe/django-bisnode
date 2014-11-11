@@ -2,7 +2,7 @@ from django.utils.timezone import now
 
 import factory
 
-from ..models import BisnodeCompanyReport
+from ..models import BisnodeCompanyReport, BisnodeBoardMemberReport
 
 
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
@@ -19,3 +19,13 @@ class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
     solvency = ''
     number_of_employees = None
     share_capital = None
+
+
+class BisnodeBoardMemberReportFactory(factory.DjangoModelFactory):
+    FACTORY_FOR = BisnodeBoardMemberReport
+
+    created = now()
+    company_report = factory.SubFactory(BisnodeCompanyReportFactory)
+    name = ''
+    function = ''
+    member_since = None
