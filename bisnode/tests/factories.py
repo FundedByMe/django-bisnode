@@ -2,14 +2,20 @@ from django.utils.timezone import now
 
 import factory
 
-from ..models import BisnodeRatingReport
+from ..models import BisnodeCompanyReport
 
 
-class BisnodeRatingReportFactory(factory.DjangoModelFactory):
-    FACTORY_FOR = BisnodeRatingReport
+class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
+    FACTORY_FOR = BisnodeCompanyReport
 
-    organization_number = "5561234567"
-    rating = None
+    company_name = ''
+    rating = ''
     date_of_rating = None
     registration_date = None
     last_updated = now()
+    history_and_operation = ''
+    management = ''
+    finances = ''
+    solvency = ''
+    number_of_employees = None
+    share_capital = None
