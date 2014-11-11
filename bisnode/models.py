@@ -66,12 +66,14 @@ class BisnodeCompanyReport(models.Model):
         self.share_capital.amount = float(company_data.shareCapital)
 
     def _update_board_members_data(self, report):
-        self.board_members.all().delete()
+        today = datetime.now()
         BisnodeBoardMemberReport.create_board_members_reports(self.id, report)
+        self.board_members.fillter(created__lt=today).delete()
 
 
 class BisnodeBoardMemberReport(models.Model):
 
+    created = models.DateTimeField(auto_now_add=True)
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="board_members")
     name = models.CharField(max_length=60)
@@ -81,10 +83,8 @@ class BisnodeBoardMemberReport(models.Model):
 
     @classmethod
     def create_board_members_reports(cls, company_report_id, report):
-        board_members = report.boardMembers
-        for board_member in board_members:
-            board_member_report = cls()
-            board_member_report.create(company_report_id, board_member)
+        [cls().create(company_report_id, board_member)
+         for board_member in report.boardMembers]
 
     def create(self, company_report_id, board_member):
         self.company_report_id = company_report_id

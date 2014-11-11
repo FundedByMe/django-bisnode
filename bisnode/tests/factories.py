@@ -24,6 +24,7 @@ class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
 class BisnodeBoardMemberReportFactory(factory.DjangoModelFactory):
     FACTORY_FOR = BisnodeBoardMemberReport
 
+    created = now()
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     name = ''
     function = ''
