@@ -43,6 +43,7 @@ class BisnodeCompanyReport(models.Model):
             organization_number=organization_number)
         self._update_general_company_data(rating_report)
         self.save()
+        return self
 
     def create_standard_report(self, organization_number):
         standard_report = get_bisnode_company_report(
@@ -51,6 +52,7 @@ class BisnodeCompanyReport(models.Model):
         self._update_general_company_data(standard_report)
         self._update_board_members_data(standard_report)
         self.save()
+        return self
 
     def _update_general_company_data(self, report):
         company_data = report.generalCompanyData[0]
