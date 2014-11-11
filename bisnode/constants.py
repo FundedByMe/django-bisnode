@@ -106,3 +106,11 @@ SOLVENCY_CHOICES = (
 )
 
 SOLVENCY_CHOICES_DICT = dict(SOLVENCY_CHOICES)
+
+BOARD_MEMBERS_FUNCTION_CHOICES = (
+    ('00', _('Member managing dir.')),
+    ('20', _('Member')),
+    ('32', _('Deputy')),
+    ('97', _('Auditor')),
+    ('', _('Member')),
+)

@@ -68,3 +68,4 @@ class BisnodeCompanyReportTests(TestCase):
             report_type=COMPANY_STANDARD_REPORT,
             organization_number=TEST_ORGANIZATION_NUMBER)
         self.assert_general_company_data_saved_successfully()
+        self.assertTrue(self.company_report.board_members.exists())
