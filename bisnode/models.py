@@ -10,17 +10,7 @@ from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         FINANCES_CHOICES, SOLVENCY_CHOICES,
                         BOARD_MEMBERS_FUNCTION_CHOICES)
 from .bisnode import get_bisnode_company_report
-
-
-def bisnode_date_to_date(bisnode_date):
-    if len(bisnode_date) == 6:
-        bisnode_date += '01'
-    formatted_datetime = datetime.strptime(bisnode_date, "%Y%m%d")
-    return formatted_datetime.date()
-
-
-def k_number_to_number(number):
-    return number * 1000
+from .utils import bisnode_date_to_date, k_number_to_number
 
 
 class BisnodeCompanyReport(models.Model):
