@@ -44,24 +44,10 @@ class BisnodeCompanyReport(models.Model):
     share_capital = MoneyField(
         default=0, default_currency="SEK", decimal_places=2, max_digits=14)
 
-    def create_rating_report(self, organization_number):
-        rating_report = get_bisnode_company_report(
-            report_type=COMPANY_RATING_REPORT,
+    def _create_company_report(self, organization_number, report_type):
+        report = get_bisnode_company_report(
+            report_type=report_type,
             organization_number=organization_number)
-        self._update_general_company_data(rating_report)
-        self.save()
-        return self
-
-    def create_standard_report(self, organization_number):
-        standard_report = get_bisnode_company_report(
-            report_type=COMPANY_STANDARD_REPORT,
-            organization_number=organization_number)
-        self._update_general_company_data(standard_report)
-        self._update_board_members_data(standard_report)
-        self.save()
-        return self
-
-    def _update_general_company_data(self, report):
         company_data = report.generalCompanyData[0]
         self.company_name = company_data.companyName
         self.rating = company_data.ratingCode
@@ -73,16 +59,46 @@ class BisnodeCompanyReport(models.Model):
         self.solvency = company_data.abilityToPay1
         self.number_of_employees = company_data.noOfEmployees1
         self.share_capital.amount = float(company_data.shareCapital)
+        self.save()
+        return report
 
-    def _update_board_members_data(self, report):
-        today = datetime.now()
-        BisnodeBoardMemberReport.create_board_members_reports(self.id, report)
-        self.board_members.filter(created__lt=today).delete()
+    def create_rating_report(self, organization_number):
+        self._create_company_report(organization_number, COMPANY_RATING_REPORT)
+        return self
+
+    def create_standard_report(self, organization_number):
+        standard_report = self._create_company_report(organization_number,
+                                                      COMPANY_STANDARD_REPORT)
+        BisnodeBoardMemberReport.create_reports(self.id, standard_report)
+        return self
 
 
-class BisnodeBoardMemberReport(models.Model):
+class BisnodeCompanySubReport(models.Model):
 
     created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        abstract = True
+        get_latest_by = "created"
+
+    @classmethod
+    def _get_bisnode_name(cls):
+        raise NotImplementedError()
+
+    @classmethod
+    def create_reports(cls, company_report_id, company_report):
+        today = datetime.now()
+        bisnode_reports = getattr(company_report, cls._get_bisnode_name())
+        [cls().create(company_report_id, report) for report in bisnode_reports]
+        cls.objects.filter(company_report_id=company_report_id,
+                           created__lt=today).delete()
+
+    def create(self, company_report_id, bisnode_report):
+        raise NotImplementedError()
+
+
+class BisnodeBoardMemberReport(BisnodeCompanySubReport):
+
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="board_members")
     name = models.CharField(max_length=60)
@@ -91,9 +107,8 @@ class BisnodeBoardMemberReport(models.Model):
     member_since = models.DateField(blank=True, null=True)
 
     @classmethod
-    def create_board_members_reports(cls, company_report_id, report):
-        [cls().create(company_report_id, board_member)
-         for board_member in report.boardMembers]
+    def _get_bisnode_name(cls):
+        return 'boardMembers'
 
     def create(self, company_report_id, board_member):
         self.company_report_id = company_report_id
@@ -105,9 +120,10 @@ class BisnodeBoardMemberReport(models.Model):
         self.save()
 
 
-class BisnodeFinancialStatementReport(models.Model):
+class BisnodeFinancialStatementReport(BisnodeCompanySubReport):
 
-    created = models.DateTimeField(auto_now_add=True)
+    company_report = models.ForeignKey(BisnodeCompanyReport,
+                                       related_name="financial_statements")
     statement_date = models.DateField()
     number_of_months_covered = models.PositiveIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(12)])
@@ -144,9 +160,8 @@ class BisnodeFinancialStatementReport(models.Model):
                                           max_digits=6)
 
     @classmethod
-    def create_financial_statements(cls, company_report_id, company_report):
-        [cls().create(company_report_id, statement)
-         for statement in company_report.financialStatementCommon]
+    def _get_bisnode_name(cls):
+        return 'financialStatementCommon'
 
     def create(self, company_report_id, statement):
         self.company_report_id = company_report_id
@@ -169,3 +184,4 @@ class BisnodeFinancialStatementReport(models.Model):
         self.liability_ratio = statement.liabilityRatio.value
         self.interest_cover = statement.interestCover.value
         self.turnover_assets = statement.turnoverAssets.value
+        self.save()
