@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 from money.contrib.django.models.fields import MoneyField
 
@@ -12,8 +13,14 @@ from .bisnode import get_bisnode_company_report
 
 
 def bisnode_date_to_date(bisnode_date):
+    if len(bisnode_date) == 6:
+        bisnode_date += '01'
     formatted_datetime = datetime.strptime(bisnode_date, "%Y%m%d")
     return formatted_datetime.date()
+
+
+def k_number_to_number(number):
+    return number * 1000
 
 
 class BisnodeCompanyReport(models.Model):
@@ -96,3 +103,69 @@ class BisnodeBoardMemberReport(models.Model):
         if member_since:
             self.member_since = bisnode_date_to_date(member_since)
         self.save()
+
+
+class BisnodeFinancialStatementReport(models.Model):
+
+    created = models.DateTimeField(auto_now_add=True)
+    statement_date = models.DateField()
+    number_of_months_covered = models.PositiveIntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(12)])
+    total_income = MoneyField(default=0, default_currency="SEK",
+                              decimal_places=2, max_digits=14)
+    income_after_financial_items = MoneyField(
+        default=0, default_currency="SEK", decimal_places=2, max_digits=14)
+    net_worth = MoneyField(default=0, default_currency="SEK",
+                           decimal_places=2, max_digits=14)
+    total_assets = MoneyField(default=0, default_currency="SEK",
+                              decimal_places=2, max_digits=14)
+    average_number_of_employees = models.PositiveIntegerField()
+    equity_ratio = models.DecimalField(default=0, decimal_places=2,
+                                       max_digits=6)
+    quick_ratio = models.DecimalField(default=0, decimal_places=2,
+                                      max_digits=6)
+    current_ratio = models.DecimalField(default=0, decimal_places=2,
+                                        max_digits=6)
+    profit_margin = models.DecimalField(default=0, decimal_places=2,
+                                        max_digits=6)
+    return_of_total_assets = models.DecimalField(default=0, decimal_places=2,
+                                                 max_digits=6)
+    return_on_equity = models.DecimalField(default=0, decimal_places=2,
+                                           max_digits=6)
+    interest_on_liabilities = models.DecimalField(default=0, decimal_places=2,
+                                                  max_digits=6)
+    risk_margin = models.DecimalField(default=0, decimal_places=2,
+                                      max_digits=6)
+    liability_ratio = models.DecimalField(default=0, decimal_places=2,
+                                          max_digits=6)
+    interest_cover = models.DecimalField(default=0, decimal_places=2,
+                                         max_digits=6)
+    turnover_assets = models.DecimalField(default=0, decimal_places=2,
+                                          max_digits=6)
+
+    @classmethod
+    def create_financial_statements(cls, company_report_id, company_report):
+        [cls().create(company_report_id, statement)
+         for statement in company_report.financialStatementCommon]
+
+    def create(self, company_report_id, statement):
+        self.company_report_id = company_report_id
+        self.statement_date = bisnode_date_to_date(statement.statementDate)
+        self.number_of_months_covered = statement.noOfMonthsCovered
+        self.total_income = k_number_to_number(statement.totalIncome.value)
+        self.income_after_financial_items = k_number_to_number(
+            statement.incomeAfterFinItems.value)
+        self.net_worth = k_number_to_number(statement.netWorth.value)
+        self.total_assets = k_number_to_number(statement.totalAssets.value)
+        self.average_number_of_employees = statement.noOfEmployeesAverage.value
+        self.equity_ratio = statement.equityRatio.value
+        self.quick_ratio = statement.quickRatio.value
+        self.current_ratio = statement.currentRatio.value
+        self.profit_margin = statement.profitMargin.value
+        self.return_of_total_assets = statement.returnOnTotalAssets.value
+        self.return_on_equity = statement.returnOnEquity.value
+        self.interest_on_liabilities = statement.interestOnLiabilities.value
+        self.risk_margin = statement.riskmargin.value
+        self.liability_ratio = statement.liabilityRatio.value
+        self.interest_cover = statement.interestCover.value
+        self.turnover_assets = statement.turnoverAssets.value
