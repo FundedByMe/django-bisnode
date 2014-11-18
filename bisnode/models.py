@@ -10,7 +10,7 @@ from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         FINANCES_CHOICES, SOLVENCY_CHOICES,
                         BOARD_MEMBERS_FUNCTION_CHOICES)
 from .bisnode import get_bisnode_company_report
-from .utils import bisnode_date_to_date, k_number_to_number
+from .utils import bisnode_date_to_date, format_bisnode_amount
 
 
 class BisnodeCompanyReport(models.Model):
@@ -156,22 +156,25 @@ class BisnodeFinancialStatementReport(BisnodeCompanySubReport):
     def create(self, company_report_id, statement):
         self.company_report_id = company_report_id
         self.statement_date = bisnode_date_to_date(statement.statementDate)
-        self.number_of_months_covered = statement.noOfMonthsCovered
-        self.total_income = k_number_to_number(statement.totalIncome.value)
-        self.income_after_financial_items = k_number_to_number(
+        self.number_of_months_covered = int(statement.noOfMonthsCovered)
+        self.total_income = format_bisnode_amount(statement.totalIncome.value)
+        self.income_after_financial_items = format_bisnode_amount(
             statement.incomeAfterFinItems.value)
-        self.net_worth = k_number_to_number(statement.netWorth.value)
-        self.total_assets = k_number_to_number(statement.totalAssets.value)
-        self.average_number_of_employees = statement.noOfEmployeesAverage.value
-        self.equity_ratio = statement.equityRatio.value
-        self.quick_ratio = statement.quickRatio.value
-        self.current_ratio = statement.currentRatio.value
-        self.profit_margin = statement.profitMargin.value
-        self.return_of_total_assets = statement.returnOnTotalAssets.value
-        self.return_on_equity = statement.returnOnEquity.value
-        self.interest_on_liabilities = statement.interestOnLiabilities.value
-        self.risk_margin = statement.riskmargin.value
-        self.liability_ratio = statement.liabilityRatio.value
-        self.interest_cover = statement.interestCover.value
-        self.turnover_assets = statement.turnoverAssets.value
+        self.net_worth = format_bisnode_amount(statement.netWorth.value)
+        self.total_assets = format_bisnode_amount(statement.totalAssets.value)
+        self.average_number_of_employees = int(
+            statement.noOfEmployeesAverage.value)
+        self.equity_ratio = float(statement.equityRatio.value)
+        self.quick_ratio = float(statement.quickRatio.value)
+        self.current_ratio = float(statement.currentRatio.value)
+        self.profit_margin = float(statement.profitMargin.value)
+        self.return_of_total_assets = float(
+            statement.returnOnTotalAssets.value)
+        self.return_on_equity = float(statement.returnOnEquity.value)
+        self.interest_on_liabilities = float(
+            statement.interestOnLiabilities.value)
+        self.risk_margin = float(statement.riskmargin.value)
+        self.liability_ratio = float(statement.liabilityRatio.value)
+        self.interest_cover = float(statement.interestCover.value)
+        self.turnover_assets = float(statement.turnoverAssets.value)
         self.save()

@@ -8,5 +8,5 @@ def bisnode_date_to_date(bisnode_date):
     return formatted_datetime.date()
 
 
-def k_number_to_number(number):
-    return number * 1000
+def format_bisnode_amount(amount):
+    return float(amount) * 1000
