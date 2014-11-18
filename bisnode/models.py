@@ -60,6 +60,8 @@ class BisnodeCompanyReport(models.Model):
         standard_report = self._create_company_report(organization_number,
                                                       COMPANY_STANDARD_REPORT)
         BisnodeBoardMemberReport.create_reports(self.id, standard_report)
+        BisnodeFinancialStatementReport.create_reports(self.id,
+                                                       standard_report)
         return self
 
 
