@@ -69,3 +69,13 @@ class BisnodeCompanyReportTests(TestCase):
             organization_number=TEST_ORGANIZATION_NUMBER)
         self.assert_general_company_data_saved_successfully()
         self.assertTrue(self.company_report.board_members.exists())
+        self.assertTrue(self.company_report.financial_statements.exists())
+
+
+class BisnodeCompanySubReportTestMixin(object):
+
+    def setUp(self):
+        super(BisnodeCompanySubReportTestMixin, self).setUp()
+        self.company_report = BisnodeCompanyReportFactory()
+        self.standard_report = mock_get_bisnode_company_report(
+            COMPANY_STANDARD_REPORT, TEST_ORGANIZATION_NUMBER)

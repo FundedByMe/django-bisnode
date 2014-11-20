@@ -3,26 +3,19 @@ from datetime import date
 from django.test import TestCase
 
 from ..models import BisnodeBoardMemberReport
-from ..constants import COMPANY_STANDARD_REPORT
 
-from .bisnode import mock_get_bisnode_company_report, TEST_ORGANIZATION_NUMBER
-from .factories import (BisnodeCompanyReportFactory,
-                        BisnodeBoardMemberReportFactory)
+from .factories import BisnodeBoardMemberReportFactory
+from .company_report import BisnodeCompanySubReportTestMixin
 
 
-class BisnodeBoardMemberReportTests(TestCase):
+class BisnodeBoardMemberReportTests(BisnodeCompanySubReportTestMixin,
+                                    TestCase):
 
-    def setUp(self):
-        super(BisnodeBoardMemberReportTests, self).setUp()
-        self.company_report = BisnodeCompanyReportFactory()
-        self.standard_report = mock_get_bisnode_company_report(
-            COMPANY_STANDARD_REPORT, TEST_ORGANIZATION_NUMBER)
-
-    def test_create_board_members_reports(self):
+    def test_create_reports(self):
         self.assertFalse(self.company_report.board_members.exists())
-        BisnodeBoardMemberReport.create_board_members_reports(
+        BisnodeBoardMemberReport.create_reports(
             company_report_id=self.company_report.id,
-            report=self.standard_report)
+            company_report=self.standard_report)
         self.assertEqual(self.company_report.board_members.count(), 4)
 
     def test_create(self):
