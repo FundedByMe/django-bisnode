@@ -1,7 +1,8 @@
-from datetime import datetime, date
+from datetime import date
 
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.utils import timezone
 
 from money.contrib.django.models.fields import MoneyField
 
@@ -80,7 +81,7 @@ class BisnodeCompanySubReport(models.Model):
 
     @classmethod
     def create_reports(cls, company_report_id, company_report):
-        today = datetime.now()
+        today = timezone.now()
         bisnode_reports = getattr(company_report, cls._get_bisnode_name())
         [cls().create(company_report_id, report) for report in bisnode_reports]
         cls.objects.filter(company_report_id=company_report_id,
