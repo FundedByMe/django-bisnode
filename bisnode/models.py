@@ -182,3 +182,24 @@ class BisnodeFinancialStatementReport(BisnodeCompanySubReport):
         self.interest_cover = get('interestCover', float)
         self.turnover_assets = get('turnoverAssets', float)
         self.save()
+
+
+class BisnodeHistoricalRatingReport(BisnodeCompanySubReport):
+
+    company_report = models.ForeignKey(BisnodeCompanyReport,
+                                       related_name="historical_rating")
+    rating = models.CharField(max_length=3, choices=RATING_CHOICES, blank=True)
+    date_of_rating = models.DateField(blank=True, null=True)
+    date_of_annual_report = models.DateField(blank=True, null=True)
+
+    @classmethod
+    def _get_bisnode_name(cls):
+        return 'historicalRating'
+
+    def create(self, company_report_id, subreport):
+        get = lambda x, y: get_node_value(subreport, x, y)
+        self.company_report_id = company_report_id
+        self.rating = get('historicalRating', str)
+        self.date_of_rating = get('dateOfHistoricalRating', date)
+        self.date_of_annual_report = get('dateOfAnnualReport', date)
+        self.save()
