@@ -4,7 +4,8 @@ import factory
 
 from ..models import (
     BisnodeCompanyReport, BisnodeCompanySubReport,
-    BisnodeBoardMemberReport, BisnodeFinancialStatementReport)
+    BisnodeBoardMemberReport, BisnodeFinancialStatementReport,
+    BisnodeHistoricalRatingReport)
 
 
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
@@ -62,3 +63,12 @@ class BisnodeFinancialStatementReportFactory(BisnodeCompanySubReportFactory):
     liability_ratio = 0
     interest_cover = 0
     turnover_assets = 0
+
+
+class BisnodeHistoricalRatingReportFactory(BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeHistoricalRatingReport
+
+    company_report = factory.SubFactory(BisnodeCompanyReportFactory)
+    rating = ''
+    date_of_rating = None
+    date_of_annual_report = None

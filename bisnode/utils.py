@@ -4,7 +4,10 @@ from datetime import datetime, date
 def bisnode_date_to_date(bisnode_date):
     if len(bisnode_date) == 6:
         bisnode_date += '01'
-    formatted_datetime = datetime.strptime(bisnode_date, "%Y%m%d")
+    try:
+        formatted_datetime = datetime.strptime(bisnode_date, "%Y%m%d")
+    except ValueError:
+        return None
     return formatted_datetime.date()
 
 
