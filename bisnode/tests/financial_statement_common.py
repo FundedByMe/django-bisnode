@@ -4,28 +4,29 @@ from django.test import TestCase
 
 from money import Money
 
-from ..models import BisnodeFinancialStatementReport
+from ..models import BisnodeFinancialStatementCommonReport
 
-from .factories import BisnodeFinancialStatementReportFactory
+from .factories import BisnodeFinancialStatementCommonReportFactory
 from .company_report import BisnodeCompanySubReportTestMixin
 
 
-class BisnodeFinancialStatementReportTests(BisnodeCompanySubReportTestMixin,
-                                           TestCase):
+class BisnodeFinancialStatementCommonReportTests(
+        BisnodeCompanySubReportTestMixin, TestCase):
 
     def test_create_reports(self):
         self.assertFalse(self.company_report.financial_statements.exists())
-        BisnodeFinancialStatementReport.create_reports(
+        BisnodeFinancialStatementCommonReport.create_reports(
             company_report_id=self.company_report.id,
             company_report=self.standard_report)
         self.assertEqual(self.company_report.financial_statements.count(), 5)
 
     def test_create(self):
-        self.assertEqual(BisnodeFinancialStatementReport.objects.count(), 0)
+        self.assertEqual(
+            BisnodeFinancialStatementCommonReport.objects.count(), 0)
         financial_statement = self.standard_report.financialStatementCommon[0]
-        financial_report = BisnodeFinancialStatementReportFactory()
+        financial_report = BisnodeFinancialStatementCommonReportFactory()
         financial_report.create(self.company_report.id, financial_statement)
-        BisnodeFinancialStatementReport.objects.get(
+        BisnodeFinancialStatementCommonReport.objects.get(
             id=financial_report.id,
             company_report=self.company_report)
         self.assertEqual(financial_report.statement_date, date(2013, 12, 01))
