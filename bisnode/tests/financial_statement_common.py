@@ -14,11 +14,13 @@ class BisnodeFinancialStatementCommonReportTests(
         BisnodeCompanySubReportTestMixin, TestCase):
 
     def test_create_reports(self):
-        self.assertFalse(self.company_report.financial_statements.exists())
+        self.assertFalse(
+            self.company_report.financial_statements_common.exists())
         BisnodeFinancialStatementCommonReport.create_reports(
             company_report_id=self.company_report.id,
             company_report=self.standard_report)
-        self.assertEqual(self.company_report.financial_statements.count(), 5)
+        self.assertEqual(
+            self.company_report.financial_statements_common.count(), 5)
 
     def test_create(self):
         self.assertEqual(

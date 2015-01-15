@@ -117,8 +117,9 @@ class BisnodeBoardMemberReport(BisnodeCompanySubReport):
 
 class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
 
-    company_report = models.ForeignKey(BisnodeCompanyReport,
-                                       related_name="financial_statements")
+    company_report = models.ForeignKey(
+        BisnodeCompanyReport,
+        related_name="financial_statements_common")
     statement_date = models.DateField()
     number_of_months_covered = models.PositiveIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(12)])
@@ -188,8 +189,9 @@ class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
 
 class BisnodeFinancialStatementSwedenReport(BisnodeCompanySubReport):
 
-    company_report = models.ForeignKey(BisnodeCompanyReport,
-                                       related_name="financial_statements")
+    company_report = models.ForeignKey(
+        BisnodeCompanyReport,
+        related_name="financial_statements_sweden")
     account_period = models.DateField()
     number_of_months_covered = models.PositiveIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(12)])

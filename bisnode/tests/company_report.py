@@ -69,7 +69,10 @@ class BisnodeCompanyReportTests(TestCase):
             organization_number=TEST_ORGANIZATION_NUMBER)
         self.assert_general_company_data_saved_successfully()
         self.assertTrue(self.company_report.board_members.exists())
-        self.assertTrue(self.company_report.financial_statements.exists())
+        self.assertTrue(
+            self.company_report.financial_statements_common.exists())
+        self.assertTrue(
+            self.company_report.financial_statements_sweden.exists())
 
 
 class BisnodeCompanySubReportTestMixin(object):
