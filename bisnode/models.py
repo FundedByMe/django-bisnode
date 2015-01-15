@@ -62,8 +62,8 @@ class BisnodeCompanyReport(models.Model):
         standard_report = self._create_company_report(organization_number,
                                                       COMPANY_STANDARD_REPORT)
         BisnodeBoardMemberReport.create_reports(self.id, standard_report)
-        BisnodeFinancialStatementReport.create_reports(self.id,
-                                                       standard_report)
+        BisnodeFinancialStatementCommonReport.create_reports(
+            self.id, standard_report)
         return self
 
 
@@ -113,7 +113,7 @@ class BisnodeBoardMemberReport(BisnodeCompanySubReport):
         self.save()
 
 
-class BisnodeFinancialStatementReport(BisnodeCompanySubReport):
+class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="financial_statements")

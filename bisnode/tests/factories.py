@@ -4,7 +4,7 @@ import factory
 
 from ..models import (
     BisnodeCompanyReport, BisnodeCompanySubReport,
-    BisnodeBoardMemberReport, BisnodeFinancialStatementReport,
+    BisnodeBoardMemberReport, BisnodeFinancialStatementCommonReport,
     BisnodeHistoricalRatingReport)
 
 
@@ -41,8 +41,9 @@ class BisnodeBoardMemberReportFactory(BisnodeCompanySubReportFactory):
     member_since = None
 
 
-class BisnodeFinancialStatementReportFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeFinancialStatementReport
+class BisnodeFinancialStatementCommonReportFactory(
+        BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeFinancialStatementCommonReport
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     statement_date = date(1800, 12, 01)
