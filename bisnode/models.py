@@ -64,6 +64,8 @@ class BisnodeCompanyReport(models.Model):
         BisnodeBoardMemberReport.create_reports(self.id, standard_report)
         BisnodeFinancialStatementCommonReport.create_reports(
             self.id, standard_report)
+        BisnodeFinancialStatementSwedenReport.create_reports(
+            self.id, standard_report)
         return self
 
 
