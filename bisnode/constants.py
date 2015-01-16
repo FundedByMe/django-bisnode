@@ -3,6 +3,8 @@ from django.utils.translation import ugettext_lazy as _
 COMPANY_STANDARD_REPORT = "NRGCompanyReportStandard"
 COMPANY_RATING_REPORT = "NRGCompanyReportRating"
 
+CURRENCY = "SEK"
+
 HIGH = 'AAA'
 GOOD = 'AA'
 WORTHY = 'A'

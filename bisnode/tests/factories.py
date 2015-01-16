@@ -5,7 +5,7 @@ import factory
 from ..models import (
     BisnodeCompanyReport, BisnodeCompanySubReport,
     BisnodeBoardMemberReport, BisnodeFinancialStatementCommonReport,
-    BisnodeHistoricalRatingReport)
+    BisnodeFinancialStatementSwedenReport, BisnodeHistoricalRatingReport)
 
 
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
@@ -64,6 +64,37 @@ class BisnodeFinancialStatementCommonReportFactory(
     liability_ratio = 0
     interest_cover = 0
     turnover_assets = 0
+
+
+class BisnodeFinancialStatementSwedenReportFactory(
+        BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeFinancialStatementSwedenReport
+
+    company_report = factory.SubFactory(BisnodeCompanyReportFactory)
+    account_period = date(1800, 12, 01)
+    number_of_months_covered = 1
+    total_turnover = 0
+    total_operating_expenses = 0
+    result_after_depreciation = 0
+    total_financial_income = 0
+    total_financial_costs = 0
+    result_after_financial_items = 0
+    result_before_allocations = 0
+    result_before_tax = 0
+    annual_net_profit_loss = 0
+    total_intangible_assets = 0
+    total_tangible_assets = 0
+    total_financial_assets = 0
+    total_receivables = 0
+    total_current_assets = 0
+    total_restricted_equity = 0
+    total_non_restricted_capital = 0
+    shareholders_equity = 0
+    untaxed_reserves = 0
+    total_allocations = 0
+    total_long_term_liabilities = 0
+    total_current_liabilities = 0
+    total_equity_and_liability = 0
 
 
 class BisnodeHistoricalRatingReportFactory(BisnodeCompanySubReportFactory):
