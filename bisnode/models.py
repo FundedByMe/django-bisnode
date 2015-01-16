@@ -9,7 +9,7 @@ from money.contrib.django.models.fields import MoneyField
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
                         FINANCES_CHOICES, SOLVENCY_CHOICES,
-                        BOARD_MEMBERS_FUNCTION_CHOICES)
+                        BOARD_MEMBERS_FUNCTION_CHOICES, CURRENCY)
 from .bisnode import get_bisnode_company_report
 from .utils import format_bisnode_amount, get_node_value
 
@@ -32,8 +32,8 @@ class BisnodeCompanyReport(models.Model):
     solvency = models.CharField(
         max_length=6, choices=SOLVENCY_CHOICES, blank=True)
     number_of_employees = models.IntegerField(null=True, blank=True)
-    share_capital = MoneyField(null=True, blank=True, default_currency="SEK",
-                               decimal_places=2, max_digits=14)
+    share_capital = MoneyField(null=True, blank=True, max_digits=14,
+                               default_currency=CURRENCY, decimal_places=2)
 
     def _create_company_report(self, organization_number, report_type):
         report = get_bisnode_company_report(
@@ -123,15 +123,15 @@ class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
     statement_date = models.DateField()
     number_of_months_covered = models.PositiveIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(12)])
-    total_income = MoneyField(null=True, blank=True, default_currency="SEK",
-                              decimal_places=2, max_digits=14)
+    total_income = MoneyField(null=True, blank=True, max_digits=14,
+                              default_currency=CURRENCY, decimal_places=2)
     income_after_financial_items = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
-    net_worth = MoneyField(null=True, blank=True, default_currency="SEK",
-                           decimal_places=2, max_digits=14)
-    total_assets = MoneyField(null=True, blank=True, default_currency="SEK",
-                              decimal_places=2, max_digits=14)
+    net_worth = MoneyField(null=True, blank=True, max_digits=14,
+                           default_currency=CURRENCY, decimal_places=2)
+    total_assets = MoneyField(null=True, blank=True, max_digits=14,
+                              default_currency=CURRENCY, decimal_places=2)
     average_number_of_employees = models.PositiveIntegerField(
         null=True, blank=True)
     equity_ratio = models.DecimalField(null=True, blank=True, decimal_places=2,
@@ -195,66 +195,67 @@ class BisnodeFinancialStatementSwedenReport(BisnodeCompanySubReport):
     account_period = models.DateField()
     number_of_months_covered = models.PositiveIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(12)])
-    total_turnover = MoneyField(null=True, blank=True, default_currency="SEK",
-                                decimal_places=2, max_digits=14)
+    total_turnover = MoneyField(null=True, blank=True, max_digits=14,
+                                default_currency=CURRENCY, decimal_places=2)
     total_operating_expenses = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     result_after_depreciation = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     total_financial_income = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     total_financial_costs = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     result_after_financial_items = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     result_before_allocations = MoneyField(
-        null=True, blank=True, default_currency="SEK",
+        null=True, blank=True, default_currency=CURRENCY,
         decimal_places=2, max_digits=14)
     result_before_tax = MoneyField(null=True, blank=True, decimal_places=2,
-                                   default_currency="SEK", max_digits=14)
+                                   default_currency=CURRENCY, max_digits=14)
     annual_net_profit_loss = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     total_intangible_assets = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
-    total_tangible_assets = MoneyField(null=True, blank=True, decimal_places=2,
-                                       default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
+    total_tangible_assets = MoneyField(
+        null=True, blank=True, decimal_places=2,
+        default_currency=CURRENCY, max_digits=14)
     total_financial_assets = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     total_receivables = MoneyField(null=True, blank=True, decimal_places=2,
-                                   default_currency="SEK", max_digits=14)
+                                   default_currency=CURRENCY, max_digits=14)
     total_current_assets = MoneyField(null=True, blank=True, decimal_places=2,
-                                      default_currency="SEK", max_digits=14)
+                                      default_currency=CURRENCY, max_digits=14)
     total_assets = MoneyField(null=True, blank=True, decimal_places=2,
-                              default_currency="SEK", max_digits=14)
+                              default_currency=CURRENCY, max_digits=14)
     total_restricted_equity = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     total_non_restricted_capital = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     shareholders_equity = MoneyField(null=True, blank=True, decimal_places=2,
-                                     default_currency="SEK", max_digits=14)
+                                     default_currency=CURRENCY, max_digits=14)
     untaxed_reserves = MoneyField(null=True, blank=True, decimal_places=2,
-                                  default_currency="SEK", max_digits=14)
+                                  default_currency=CURRENCY, max_digits=14)
     total_allocations = MoneyField(null=True, blank=True, decimal_places=2,
-                                   default_currency="SEK", max_digits=14)
+                                   default_currency=CURRENCY, max_digits=14)
     total_long_term_liabilities = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     total_current_liabilities = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
     total_equity_and_liability = MoneyField(
         null=True, blank=True, decimal_places=2,
-        default_currency="SEK", max_digits=14)
+        default_currency=CURRENCY, max_digits=14)
 
     @classmethod
     def _get_bisnode_name(cls):
