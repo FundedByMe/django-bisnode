@@ -73,6 +73,7 @@ class BisnodeCompanyReportTests(TestCase):
             self.company_report.financial_statements_common.exists())
         self.assertTrue(
             self.company_report.financial_statements_sweden.exists())
+        self.assertTrue(self.company_report.historical_rating.exists())
 
 
 class BisnodeCompanySubReportTestMixin(object):
