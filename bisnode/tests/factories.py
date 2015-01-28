@@ -4,8 +4,8 @@ import factory
 
 from ..models import (
     BisnodeCompanyReport, BisnodeCompanySubReport,
-    BisnodeBoardMemberReport, BisnodeFinancialStatementCommonReport,
-    BisnodeFinancialStatementSwedenReport, BisnodeHistoricalRatingReport)
+    BisnodeBoardMember, BisnodeFinancialStatementCommon,
+    BisnodeFinancialStatementSweden, BisnodeHistoricalRating)
 
 
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
@@ -32,8 +32,8 @@ class BisnodeCompanySubReportFactory(factory.DjangoModelFactory):
     created = None
 
 
-class BisnodeBoardMemberReportFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeBoardMemberReport
+class BisnodeBoardMemberFactory(BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeBoardMember
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     name = ''
@@ -41,9 +41,9 @@ class BisnodeBoardMemberReportFactory(BisnodeCompanySubReportFactory):
     member_since = None
 
 
-class BisnodeFinancialStatementCommonReportFactory(
+class BisnodeFinancialStatementCommonFactory(
         BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeFinancialStatementCommonReport
+    FACTORY_FOR = BisnodeFinancialStatementCommon
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     statement_date = date(1800, 12, 01)
@@ -66,9 +66,8 @@ class BisnodeFinancialStatementCommonReportFactory(
     turnover_assets = 0
 
 
-class BisnodeFinancialStatementSwedenReportFactory(
-        BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeFinancialStatementSwedenReport
+class BisnodeFinancialStatementSwedenFactory(BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeFinancialStatementSweden
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     account_period = date(1800, 12, 01)
@@ -97,8 +96,8 @@ class BisnodeFinancialStatementSwedenReportFactory(
     total_equity_and_liability = 0
 
 
-class BisnodeHistoricalRatingReportFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeHistoricalRatingReport
+class BisnodeHistoricalRatingFactory(BisnodeCompanySubReportFactory):
+    FACTORY_FOR = BisnodeHistoricalRating
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     rating = ''

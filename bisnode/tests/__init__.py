@@ -1,7 +1,7 @@
 from .company_report import BisnodeCompanyReportTests
-from .board_member import BisnodeBoardMemberReportTests
+from .board_member import BisnodeBoardMemberTests
 from .financial_statement_common import (
-    BisnodeFinancialStatementCommonReportTests)
+    BisnodeFinancialStatementCommonTests)
 from .financial_statement_sweden import (
-    BisnodeFinancialStatementSwedenReportTests)
-from .historical_rating import BisnodeHistoricalRatingReportTests
+    BisnodeFinancialStatementSwedenTests)
+from .historical_rating import BisnodeHistoricalRatingTests
