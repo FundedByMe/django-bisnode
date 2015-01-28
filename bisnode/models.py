@@ -61,11 +61,12 @@ class BisnodeCompanyReport(models.Model):
     def create_standard_report(self, organization_number):
         standard_report = self._create_company_report(organization_number,
                                                       COMPANY_STANDARD_REPORT)
-        BisnodeBoardMemberReport.create_reports(self.id, standard_report)
-        BisnodeFinancialStatementCommonReport.create_reports(
-            self.id, standard_report)
-        BisnodeFinancialStatementSwedenReport.create_reports(
-            self.id, standard_report)
+        BisnodeBoardMember.create_reports(self.id, standard_report)
+        BisnodeFinancialStatementCommon.create_reports(self.id,
+                                                       standard_report)
+        BisnodeFinancialStatementSweden.create_reports(self.id,
+                                                       standard_report)
+        BisnodeHistoricalRating.create_reports(self.id, standard_report)
         return self
 
 
@@ -93,7 +94,7 @@ class BisnodeCompanySubReport(models.Model):
         raise NotImplementedError()
 
 
-class BisnodeBoardMemberReport(BisnodeCompanySubReport):
+class BisnodeBoardMember(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="board_members")
@@ -115,7 +116,7 @@ class BisnodeBoardMemberReport(BisnodeCompanySubReport):
         self.save()
 
 
-class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
+class BisnodeFinancialStatementCommon(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(
         BisnodeCompanyReport,
@@ -187,7 +188,7 @@ class BisnodeFinancialStatementCommonReport(BisnodeCompanySubReport):
         self.save()
 
 
-class BisnodeFinancialStatementSwedenReport(BisnodeCompanySubReport):
+class BisnodeFinancialStatementSweden(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(
         BisnodeCompanyReport,
@@ -315,7 +316,7 @@ class BisnodeFinancialStatementSwedenReport(BisnodeCompanySubReport):
         self.save()
 
 
-class BisnodeHistoricalRatingReport(BisnodeCompanySubReport):
+class BisnodeHistoricalRating(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="historical_rating")
