@@ -41,7 +41,7 @@ class BisnodeCompanyReport(models.Model):
             organization_number=organization_number)
         company_data = report.generalCompanyData[0]
         get = lambda x, y: get_node_value(company_data, x, y)
-        self.company_name = get('companyName', str)
+        self.company_name = get('companyName', unicode)
         self.rating = get('ratingCode', str)
         self.date_of_rating = get('dateOfRating', date)
         self.registration_date = get('dateReg', date)
