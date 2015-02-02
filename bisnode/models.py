@@ -41,7 +41,7 @@ class BisnodeCompanyReport(models.Model):
             organization_number=organization_number)
         company_data = report.generalCompanyData[0]
         get = lambda x, y: get_node_value(company_data, x, y)
-        self.company_name = get('companyName', unicode)
+        self.company_name = unicode(company_data.companyName)
         self.rating = get('ratingCode', str)
         self.date_of_rating = get('dateOfRating', date)
         self.registration_date = get('dateReg', date)
@@ -109,7 +109,7 @@ class BisnodeBoardMember(BisnodeCompanySubReport):
 
     def create(self, company_report_id, board_member):
         self.company_report_id = company_report_id
-        self.name = board_member.principalName
+        self.name = unicode(board_member.principalName)
         self.function = get_node_value(board_member, 'principalFunction', str)
         self.member_since = get_node_value(
             board_member, 'dateOfPrincipalApp', date)
