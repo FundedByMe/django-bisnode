@@ -320,7 +320,7 @@ class BisnodeHistoricalRating(BisnodeCompanySubReport):
 
     company_report = models.ForeignKey(BisnodeCompanyReport,
                                        related_name="historical_rating")
-    rating = models.CharField(max_length=3, choices=RATING_CHOICES, blank=True)
+    rating = models.CharField(max_length=4, choices=RATING_CHOICES, blank=True)
     date_of_rating = models.DateField(blank=True, null=True)
     date_of_annual_report = models.DateField(blank=True, null=True)
 
