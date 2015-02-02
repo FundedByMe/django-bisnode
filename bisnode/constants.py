@@ -12,6 +12,7 @@ NEW = 'AN'
 BELOW_AVERAGE = 'B'
 BAD = 'C'
 MISSING = '-'
+NEWLY_FORMED = 'NYTT'
 
 RATING_CHOICES = (
     (HIGH, _("Highest credit worthiness")),
@@ -21,6 +22,7 @@ RATING_CHOICES = (
     (BELOW_AVERAGE, _("Credit with safety measurements")),
     (BAD, _("Credit advised against")),
     (MISSING, _("Rating not applicable")),
+    (NEWLY_FORMED, _("Newly formed company")),
 )
 
 
