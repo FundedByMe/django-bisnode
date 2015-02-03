@@ -121,9 +121,9 @@ class BisnodeFinancialStatementCommon(BisnodeCompanySubReport):
     company_report = models.ForeignKey(
         BisnodeCompanyReport,
         related_name="financial_statements_common")
-    statement_date = models.DateField()
-    number_of_months_covered = models.PositiveIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(12)])
+    statement_date = models.DateField(null=True, blank=True)
+    number_of_months_covered = models.SmallIntegerField(
+        validators=[MinValueValidator(0), MaxValueValidator(12)])
     total_income = MoneyField(null=True, blank=True, max_digits=14,
                               default_currency=CURRENCY, decimal_places=2)
     income_after_financial_items = MoneyField(
@@ -193,9 +193,9 @@ class BisnodeFinancialStatementSweden(BisnodeCompanySubReport):
     company_report = models.ForeignKey(
         BisnodeCompanyReport,
         related_name="financial_statements_sweden")
-    account_period = models.DateField()
-    number_of_months_covered = models.PositiveIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(12)])
+    account_period = models.DateField(null=True, blank=True)
+    number_of_months_covered = models.SmallIntegerField(
+        validators=[MinValueValidator(0), MaxValueValidator(12)])
     total_turnover = MoneyField(null=True, blank=True, max_digits=14,
                                 default_currency=CURRENCY, decimal_places=2)
     total_operating_expenses = MoneyField(
