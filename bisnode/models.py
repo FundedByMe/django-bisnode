@@ -20,7 +20,7 @@ class BisnodeCompanyReport(models.Model):
 
     # General Company Data
     company_name = models.CharField(max_length=100, blank=True)
-    rating = models.CharField(max_length=3, choices=RATING_CHOICES, blank=True)
+    rating = models.CharField(max_length=4, choices=RATING_CHOICES, blank=True)
     date_of_rating = models.DateField(blank=True, null=True)
     registration_date = models.DateField(blank=True, null=True)
     history_and_operation = models.CharField(
