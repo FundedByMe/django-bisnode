@@ -4,7 +4,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
 
-from money.contrib.django.models.fields import MoneyField
+from djmoney.models.fields import MoneyField
 
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
