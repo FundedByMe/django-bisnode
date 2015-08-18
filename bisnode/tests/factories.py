@@ -9,7 +9,9 @@ from ..models import (
 
 
 class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
-    FACTORY_FOR = BisnodeCompanyReport
+
+    class Meta:
+        model = BisnodeCompanyReport
 
     company_name = ''
     rating = ''
@@ -26,14 +28,17 @@ class BisnodeCompanyReportFactory(factory.DjangoModelFactory):
 
 class BisnodeCompanySubReportFactory(factory.DjangoModelFactory):
 
-    ABSTRACT_FACTORY = True
-    FACTORY_FOR = BisnodeCompanySubReport
+    class Meta:
+        abstract = True
+        model = BisnodeCompanySubReport
 
     created = None
 
 
 class BisnodeBoardMemberFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeBoardMember
+
+    class Meta:
+        model = BisnodeBoardMember
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     name = ''
@@ -41,9 +46,10 @@ class BisnodeBoardMemberFactory(BisnodeCompanySubReportFactory):
     member_since = None
 
 
-class BisnodeFinancialStatementCommonFactory(
-        BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeFinancialStatementCommon
+class BisnodeFinancialStatementCommonFactory(BisnodeCompanySubReportFactory):
+
+    class Meta:
+        model = BisnodeFinancialStatementCommon
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     statement_date = date(1800, 12, 01)
@@ -67,7 +73,9 @@ class BisnodeFinancialStatementCommonFactory(
 
 
 class BisnodeFinancialStatementSwedenFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeFinancialStatementSweden
+
+    class Meta:
+        model = BisnodeFinancialStatementSweden
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     account_period = date(1800, 12, 01)
@@ -97,7 +105,9 @@ class BisnodeFinancialStatementSwedenFactory(BisnodeCompanySubReportFactory):
 
 
 class BisnodeHistoricalRatingFactory(BisnodeCompanySubReportFactory):
-    FACTORY_FOR = BisnodeHistoricalRating
+
+    class Meta:
+        model = BisnodeHistoricalRating
 
     company_report = factory.SubFactory(BisnodeCompanyReportFactory)
     rating = ''
