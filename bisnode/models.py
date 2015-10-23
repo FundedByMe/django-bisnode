@@ -13,6 +13,7 @@ from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         BOARD_MEMBERS_FUNCTION_CHOICES, CURRENCY)
 from .bisnode import get_bisnode_company_report
 from .utils import format_bisnode_amount, get_node_value
+import logging
 
 
 class BisnodeCompanyReport(models.Model):
@@ -63,10 +64,13 @@ class BisnodeCompanyReport(models.Model):
         standard_report = self._create_company_report(organization_number,
                                                       COMPANY_STANDARD_REPORT)
         BisnodeBoardMember.create_reports(self.id, standard_report)
+
         BisnodeFinancialStatementCommon.create_reports(self.id,
                                                        standard_report)
+
         BisnodeFinancialStatementSweden.create_reports(self.id,
                                                        standard_report)
+
         BisnodeHistoricalRating.create_reports(self.id, standard_report)
         return self
 
@@ -86,8 +90,15 @@ class BisnodeCompanySubReport(models.Model):
     @classmethod
     def create_reports(cls, company_report_id, company_report):
         today = timezone.now()
-        bisnode_reports = getattr(company_report, cls._get_bisnode_name())
-        [cls().create(company_report_id, report) for report in bisnode_reports]
+        try:
+            bisnode_reports = getattr(company_report, cls._get_bisnode_name())
+            [cls().create(company_report_id, report) for report in bisnode_reports]
+        except AttributeError:
+            logging.warning("Company report %d doesn't have '%s'" % (
+                company_report_id,
+                cls._get_bisnode_name()
+            ))
+
         cls.objects.filter(company_report_id=company_report_id,
                            created__lt=today).delete()
 
