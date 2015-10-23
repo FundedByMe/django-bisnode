@@ -5,6 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils import timezone
 
 from money.contrib.django.models.fields import MoneyField
+from money import Money
 
 from .constants import (COMPANY_RATING_REPORT, COMPANY_STANDARD_REPORT,
                         RATING_CHOICES, OPERATION_CHOICES, MANAGEMENT_CHOICES,
@@ -51,7 +52,7 @@ class BisnodeCompanyReport(models.Model):
         self.finances = get('financeCode', str)
         self.solvency = get('abilityToPay1', str)
         self.number_of_employees = get('noOfEmployees1', int)
-        self.share_capital.amount = get('shareCapital', float)
+        self.share_capital = Money(get('shareCapital', float), currency=CURRENCY)
         self.save()
         return report
 
